@@ -31,14 +31,14 @@ footer {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-img {
-    float: right;
+header img {
     border: 6px solid #E8DE2A;
+    width: 200px;
+    height: auto;
+    bottom: 10px;
+    float: right;
     border-radius: 8px;
     position: relative;
-    bottom: 120px;
-    object-fit: cover;
-    right: 5px;
 }
 
 #date {
