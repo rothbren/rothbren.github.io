@@ -1,0 +1,31 @@
+header, nav, main, footer {
+    margin:1.25rem auto;
+    max-width:760px;
+    padding:1px;
+}
+
+header {
+    color:brown;
+    background-color:white;
+    text-align:center;
+    padding:1.5rem;
+}
+
+footer {
+        color:brown;
+        text-align:center;
+        padding:1.5rem;
+        background-color:#F5C53578;
+}
+
+h1, h3 {
+    font-family:'Shadows Into Light', cursive;
+}
+
+h4 {
+    font-family:'Peddana', serif;
+}
+
+/*#soup-whiteSpace {
+    
+}

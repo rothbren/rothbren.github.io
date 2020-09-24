@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-witdh, initial-scale=1.0">
+  <meta name="description" content="Assignment #2: design priciples document. Finding examples and replicating.">
+  <meta name="Brenyn Rothwell" content="Lesson 2">
+  <title>Lesson #2</title>
+  <link href ="lessontwo/lesson2.css" rel="stylesheet">
+ 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Peddana&family=Shadows+Into+Light&display=swap');
+  </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Brenyn Rothwell</h1>
+        <h4>Lesson 2</h4>
+    </header>
+
+    <main>
+      <div id="soup-whiteSpace">
+         <h3>White Space</h3>
+         <p></p>
+      </div>
+
+      <div id="contrast">
+        <h3>Contrast</h3>
+        <p></p>
+     </div>
+
+     <div id="alignment">
+      <h3>Alignment</h3>
+      <p></p>
+   </div>
+
+    </main>
+    
+  <footer>
+     <p id='copyRight'> &copy2020 | Brenyn Rothwell | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+     <p id='date'><span id="currentdate"> </span></p>
+  </footer>
+    <script>
+        const todaysdate = new Date();
+        console.log(todaysdate);
+        //toLocalDateString
+        const options = {weekday: 'long', day:'numeric', month:'long', year:'numeric'};
+        document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
+    </script>
+</body>
+</html>
