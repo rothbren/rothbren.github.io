@@ -1,0 +1,25 @@
+/*phone size*********************************/
+@media only screen and (min-width: 32.5em) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    header {
+        border-radius: 10px;
+    }
+}
+
+/*tablet view*********************************/
+@media only screen and (min-width: 37.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main section:nth-child(3) {
+        grid-column:span 2;
+    }
+}

@@ -5,7 +5,7 @@ header, nav, main, footer {
 }
 
 h1 {
-    font-family: 'Lora', serif;;
+    font-family: 'Lora', serif;
 }
 
 h4 {
@@ -20,7 +20,7 @@ header {
     background-color: brown;
     color: white;
     text-align: center;
-    padding: 1.5rem;
+    border-radius:10px;
 }
 
 footer {
@@ -28,13 +28,15 @@ footer {
     color: white;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
+    border-radius:10px;
 }
 
 header img {
     border: 6px solid #E8DE2A;
-    width: 200px;
+    width: 150px;
     height: auto;
-    bottom: 10px;
+    top: 35px;
+    right: 82px;
     float: right;
     border-radius: 8px;
     position: relative;
