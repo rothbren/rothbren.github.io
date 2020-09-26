@@ -1,7 +1,7 @@
 header, nav, main, footer {
     margin: 1.25rem auto;
     max-width: 760px;
-    padding: 1px;
+    padding: 1.5px;
 }
 
 h1 {
@@ -17,22 +17,20 @@ nav {
 }
 
 header {
-    background-color: brown;
-    color: white;
+    background-color:  #69665C78;
+    color:brown;
     text-align: center;
-    border-radius:10px;
 }
 
 footer {
-    background-color: brown;
-    color: white;
+    background-color:  #69665C78;
+    color: brown;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    border-radius:10px;
 }
 
 header img {
-    border: 6px solid #E8DE2A;
+    border: 6px solid brown;
     width: 150px;
     height: auto;
     top: 35px;

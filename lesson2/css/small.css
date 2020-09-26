@@ -1,40 +1,112 @@
 header, nav, main, footer {
-    margin:1.25rem auto;
-    max-width:760px;
-    padding:1px;
+    margin: 1.25rem auto;
+    max-width: 760px;
+    padding: 1.5px;
 }
 
-header {
-    color:brown;
-    background-color:#69665C78;
-    text-align:center;
-    padding:1.5rem;
+h1 {
+    font-family: 'Lora', serif;
 }
 
-footer {
-        color: brown;
-        text-align: center;
-        padding: 1.5rem;
-        background-color: #69665C78;
-        border-radius: 10px;
-}
-
-h1, h4 {
+h4 {
     font-family: 'Lora', serif;
 }
 
 h3 {
-    font-family:'Shadows Into Light', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
+nav {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+header {
+    background-color:  #69665C78;
+    color:brown;
+    text-align: center;
+}
+
+footer {
+    background-color:  #69665C78;
+    color: brown;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+#date {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#copyRight {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img {
+    box-shadow: 0 0 30px #333;
+    align-items:center;
+}
+
+/* phone or baseline views **************************/
 main {
-    max-width: 767px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
+	max-width: 767px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
     font-size: 0.8rem;
 }
 
-/*#soup-whiteSpace {
-    
-}*/
+main section h2 {
+	color: #536878;
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+}
+
+main section:nth-child(2) {
+	display: none;
+	margin: 0.5rem;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main section:nth-child(2) {
+		display: block;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main section picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 1;
+	}
+}
+
