@@ -1,7 +1,7 @@
 header, nav, main, footer {
     margin: 1.25rem auto;
     max-width: 760px;
-    padding: 1.5px;
+    padding: 7.5px;
 }
 
 header {
@@ -17,19 +17,12 @@ footer {
     text-align: center;
 }
 
-h1 {
+h1, h4 {
     font-family: 'Lora', serif;
 }
 
-h4 {
-    font-family: 'Lora', serif;
-}
 
 h3 {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-nav {
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -45,8 +38,21 @@ nav {
     padding-right: 10px;
 }
 
+/*image sizing - check to make sure it saves and that the . is correct */
+img type, oddpear {
+    height: 328px;
+}
+
+.bottominfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.linkhome {
+    padding: 0.5px;
+}
+
 img {
-    box-shadow: 0 0 30px #333;
     align-items:center;
 }
 
@@ -56,7 +62,7 @@ main {
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 main section h2 {
@@ -75,7 +81,7 @@ main section:nth-child(2) {
 	margin: 0.5rem;
 }
 
-/* Tablet Views ******************************/
+/*tablet views *****************************
 @media only screen and (min-width: 37.5em) {
 	main {
 		grid-template-columns: 1fr 1fr;
@@ -90,7 +96,8 @@ main section:nth-child(2) {
 	}
 
 	main section picture {
-		display: block;
+        display: block;
+        align-content: center;
 	}
 	main section picture img {
 		width: 100%;
@@ -99,7 +106,7 @@ main section:nth-child(2) {
 	}
 }
 
-/* Desktop Views ****************************/
+Desktop Views ****************************
 @media only screen and (min-width: 60em) {
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
@@ -109,4 +116,4 @@ main section:nth-child(2) {
 		grid-column: span 1;
 	}
 }
-
+*/
