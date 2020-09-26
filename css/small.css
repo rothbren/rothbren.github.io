@@ -4,18 +4,6 @@ header, nav, main, footer {
     padding: 1.5px;
 }
 
-h1 {
-    font-family: 'Lora', serif;
-}
-
-h4 {
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-nav {
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
 header {
     background-color:  #69665C78;
     color:brown;
@@ -26,7 +14,19 @@ footer {
     background-color:  #69665C78;
     color: brown;
     text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+}
+
+h4 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav {
+    font-family: 'Noto Sans', sans-serif;
 }
 
 header img {
