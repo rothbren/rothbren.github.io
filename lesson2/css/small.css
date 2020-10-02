@@ -81,39 +81,4 @@ main section:nth-child(2) {
 	margin: 0.5rem;
 }
 
-/*tablet views *****************************
-@media only screen and (min-width: 37.5em) {
-	main {
-		grid-template-columns: 1fr 1fr;
-	}
 
-	main section:nth-child(2) {
-		display: block;
-	}
-
-	main section:nth-child(3) {
-		grid-column: span 2;
-	}
-
-	main section picture {
-        display: block;
-        align-content: center;
-	}
-	main section picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
-	}
-}
-
-Desktop Views ****************************
-@media only screen and (min-width: 60em) {
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-
-	main section:nth-child(3) {
-		grid-column: span 1;
-	}
-}
-*/

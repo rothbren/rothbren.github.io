@@ -1,0 +1,64 @@
+<!--site name, logo, site purpose, 
+    available domain name for the site-->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdh, initial-scale=1.0">
+    <meta name="description" content="Brenyn Rothwell's assignment portal for WDD 230 Fall Semester 2020 at BYU-I">
+    <title>Home weather site with name, logo, purpose, and domaine name</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Merriweather:ital@1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>The Temperature Tracker</h1>
+
+        <h4>Welcome to the Weather</h4>
+    </header>
+   
+    <nav class="flex-container">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="target-audience.html" class="active">Target Audience </a></li>
+            <li><a href="color-scheme.html" class="active">Color Scheme </a></li>
+            <li><a href="typography.html" class="active">Typography</a></li>
+            <li><a href="https://rothbren.github.io/" class="active">Assignment Portal Home Page</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p class='body-paragraphs'>Here at The Temp. Tracker our goal is to provide you with accurate
+            weather predictions as well as suggestions for what clothing to wear. Our easy to use
+            website provides services such as temperatures for the week, clothing suggestions, and a variety of
+            activities. The available domain is thetemptracker.com for $12/year.</p>
+
+        <picture><img class=logo src="images/thetemptrackerlogo-aliceblue.jpg" alt="The Temp Tracker Logo"></picture>
+    </main>
+
+    <footer>
+        <p id='copyRight'> &copy2020 | Brenyn Rothwell | Idaho | <a href="index.html">Home Page</a></p>
+        <p id='date'><span id="currentdate"> </span></p>
+    </footer>
+
+    <script>
+        const todaysdate = new Date();
+        console.log(todaysdate);
+        //toLocalDateString
+        const options = {
+            weekday: 'long',
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        };
+        document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
+    </script>
+
+</body>
+
+</html>
