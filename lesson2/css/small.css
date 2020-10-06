@@ -38,7 +38,6 @@ h3 {
     padding-right: 10px;
 }
 
-/*image sizing - check to make sure it saves and that the . is correct */
 img type, oddpear {
     height: 328px;
 }
@@ -76,9 +75,5 @@ main section {
 	background-color: #eee;
 }
 
-main section:nth-child(2) {
-	display: none;
-	margin: 0.5rem;
-}
 
 

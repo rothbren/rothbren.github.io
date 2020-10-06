@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Home page for a weather website in Prestin created by Brenyn Rothwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>The Temperature Tracker Home Page</title>
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <h1>Temperature Tracker</h1>
+        <h3>Welcome to the Weather</h2>
+        <img id="logo" src="images/logo-darkseagreen2.jpg" alt="The Temperature Tracker logo; mountains with a "T";>
+    </header>
+
+    <nav class="clearfix">
+        <button>&#9776</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class='active'><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>H1 Header</h1>
+        <p>home page content Lorem ipsum dolor sit amet, 
+            consectetur adipisicing elit. Saepe, iure amet. 
+            Eius officiis, aliquid recusandae fuga cumque vel 
+            labore earum mollitia eaque porro rem laudantium 
+            commodi illum obcaecati placeat autem!
+            home page content Lorem ipsum dolor sit amet, 
+            consectetur adipisicing elit. Saepe, iure amet. 
+            Eius officiis, aliquid recusandae fuga cumque vel 
+            labore earum mollitia eaque porro rem laudantium 
+            commodi illum obcaecati placeat autem!home page content Lorem ipsum dolor sit amet, 
+            consectetur adipisicing elit. Saepe, iure amet. 
+            Eius officiis, aliquid recusandae fuga cumque vel 
+            labore earum mollitia eaque porro rem laudantium 
+            commodi illum obcaecati placeat autem! </p>
+    </main>
+
+    <footer>
+        <p id='copyRight'> &copy2020 | Brenyn Rothwell | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id='date'><span id="currentdate"> </span></p>
+     </footer>
+   
+     <script>
+         const todaysdate = new Date();
+         console.log(todaysdate);
+         //toLocalDateString
+         const options = {weekday: 'long', day:'numeric', month:'long', year:'numeric'};
+         document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
+     </script>
+   </body>
+   </html>  

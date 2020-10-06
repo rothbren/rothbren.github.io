@@ -1,0 +1,112 @@
+body {
+    background-color: aliceblue;
+	font-size: 16px;
+	font-family: "Sansita", Ubuntu, sans-serif;
+}
+
+/* phone or baseline views **************************/
+header, footer {
+	background-color: darkseagreen;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header, nav, main, footer {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+h2 {
+    color: darkgreen;
+    font-family: Courier New', Courier, monospace;
+}
+
+h3 {
+    color: darkgreen;
+    font-family: Courier New', Courier, monospace;
+}
+
+h4 {
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+	background-image: linear-gradient(darkseagreen, darkgreen);
+    text-align: center;
+    padding: 0.6rem;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: aliceblue;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li a {
+	display: block;
+	color: #F0F8FF;
+	text-align: center;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+nav a:hover {
+	background-color: darkgreen;
+    color: aliceblue;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+	font-size: 0.8rem;
+}
+
+footer {
+	flex: 0 1 100%;
+    height: 75px;
+    color: darkgreen;
+}
+
+.scenarios {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.body-paragraphs {
+    margin: 20px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+#logo {
+    width: 150px;
+}
