@@ -1,27 +1,7 @@
 @media only screen and (min-width: 35em) {
-    nav button {
-        display: none;
-    }
-
-    nav ul li {
-        float: left;
-    }
-
-    nav ul li a {
-        border: none;
-        border-right: 1px solid aliceblue;
-        padding: .8rem 1rem;
-    }
-
-    nav ul {
-        margin-left: 2%;
-    }
-
-    nav ul.hide {
-        display: block;
-    }
+    
     
     #logo {
-        width: 250px;
+        width: 100%;
     }
 }
