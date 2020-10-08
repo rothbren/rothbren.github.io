@@ -24,7 +24,7 @@ header {
 
 footer {
     background-color: #b96646;
-    color: #792b2b;
+    color: white;
     font-family: Courier New, Courier, monospace;
     display: flex;
     flex-flow: column;
@@ -39,8 +39,8 @@ footer {
 h1 {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
-    color: #792b2b;
-    text-shadow: 2px 2px 4px white;
+    color: white;
+    text-shadow: 8px 8px 8px #792b2b;
 }
 
 h2 {
