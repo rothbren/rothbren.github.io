@@ -24,4 +24,12 @@
     #logo {
         width: 200px;
     }
+    
+    h1 {
+        font-size: 35px;
+    }
+        
+    #slogan {
+          font-size: 20px;
+    }
 }

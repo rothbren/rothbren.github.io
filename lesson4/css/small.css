@@ -37,7 +37,7 @@ footer {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
     color: white;
     text-shadow: 8px 8px 8px #792b2b;
@@ -112,6 +112,7 @@ nav ul li.active a {
     color: rgba(255, 255, 255, 0.7);
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
 }
 
 #logo {
