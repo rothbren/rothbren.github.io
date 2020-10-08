@@ -3,8 +3,7 @@ body {
     font-family: "Sansita", Ubuntu, sans-serif;
 }
 
-main,
-footer {
+main {
     margin: 1.25rem auto;
     max-width: 760px;
     padding: 1.5px;
@@ -116,7 +115,7 @@ nav ul li.active a {
 }
 
 #logo {
-    width: 80%;
+    width: 125px;
     height: auto;
 }
 
