@@ -21,6 +21,14 @@
         display: block;
     }
 
+    h1 {
+        font-size: 35px;
+    }
+        
+    #slogan {
+          font-size: 20px;
+    }
+
     #logo {
         width: 200px;
     }
