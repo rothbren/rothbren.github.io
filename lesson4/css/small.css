@@ -68,6 +68,7 @@ nav button {
 
 nav {
     font-family: Courier New, Courier, monospace;
+    font-weight: bold;
     background-image: linear-gradient(#b96646, #792b2b);
     text-align: center;
     padding: 0.6rem;
@@ -95,7 +96,7 @@ nav ul li a {
 
 nav a:hover {
     background-color: #792b2b;
-    color: #b96646;
+    color: white;
 }
 
 nav ul.hide {
