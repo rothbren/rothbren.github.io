@@ -41,6 +41,7 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     color: white;
     text-shadow: 8px 8px 8px #792b2b;
+    margin:0;
 }
 
 h2 {
@@ -68,7 +69,6 @@ nav button {
 
 nav {
     font-family: Courier New, Courier, monospace;
-    font-size: 12px;
     font-weight: bold;
     background-image: linear-gradient(#b96646, #792b2b);
     text-align: center;
@@ -88,10 +88,9 @@ nav ul {
 nav ul li a {
     display: block;
     color: black;
-    text-align: center;
     padding: 20px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 16px;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 

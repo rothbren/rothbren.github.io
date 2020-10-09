@@ -8,13 +8,12 @@
     }
 
     nav ul li a {
-        border: none;
-        border-right: 1px solid aliceblue;
         padding: 0.6rem 1rem;
      }
 
     nav ul {
         margin-left: 2%;
+        font-size: 42px;
     }
 
     nav ul.hide {
@@ -27,6 +26,7 @@
     
     h1 {
         font-size: 35px;
+        margin: 1px;
     }
         
     #slogan {
