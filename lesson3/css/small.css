@@ -1,12 +1,11 @@
 body {
-    background-color: aliceblue;
 	font-size: 16px;
 	font-family: "Sansita", Ubuntu, sans-serif;
 }
 
 /* phone or baseline views **************************/
 header, footer {
-	background-color: #68B0AB;
+	background-color: #792b2b;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -22,16 +21,16 @@ header, nav, main, footer {
 h1 {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
-    color: #F0F8FF;
+    color: white;
 }
 
 h4 {
-    color: #563264;
+    color: #b96646;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
-	background-color: #563264;
+	background-color: black;
     text-align: center;
 }
 
@@ -52,8 +51,8 @@ nav ul li a {
 }
 
 nav a:hover {
-	background-color: #68B0AB;
-    color: aliceblue;
+	background-color: #b96646;
+    color: white;
 }
 
 main {
@@ -72,7 +71,7 @@ main picture {
 footer {
 	flex: 0 1 100%;
     height: 75px;
-    color: #563264;
+    color: #792b2b;
 }
 
 .scenarios {
