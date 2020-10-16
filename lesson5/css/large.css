@@ -1,8 +1,4 @@
 @media only screen and (min-width: 64rem) {
-    #logo {
-        width: 200px;
-    }
-
     nav button {
         display: none;
     }
@@ -24,7 +20,10 @@
         display: block;
     }
 
-
+    #logo {
+        width: 200px;
+    }
+    
     h1 {
         font-size: 35px;
         margin: 1px;
@@ -33,16 +32,4 @@
     #slogan {
           font-size: 20px;
     }
-
-    .preston_map {
-        width: 300px;
-        height: auto;
-        margin: auto;
-        padding: 20px;
-    }
-
-    #weather_summary {
-        bottom: 225px;
-        left: 70px;
-        }
 }

@@ -11,45 +11,5 @@
     #logo {
         width: 135px;
     }
-    
-    nav button {
-        display: none;
-    }
-
-    nav ul li {
-        float: left;      
-    }
-
-    nav ul li a {
-        padding: 0.6rem 1rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;  
-        
-     }
-
-    nav ul {
-        margin-left: 2%;
-        font-size: 42px;
-    }
-
-    nav ul.hide {
-        display: block;
-    }
-    
-    #weather_summary {
-    position: absolute;
-    bottom: 250px;
-    left: 50px;
-    }
-    
-    .preston_map {
-     display: block;
-     width: 300px;
-     height: auto;
-     margin: auto;
-     padding: 20px;
-    }
-
 }
 

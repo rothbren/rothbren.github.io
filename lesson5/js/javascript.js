@@ -31,10 +31,3 @@ const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 
 document.getElementById('currentdate').textContent = fulldate;
 
-function pancakeday() {
-    var pancake;
-    if (daynames= "Friday"){
-        pancake = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion"
-    }
-    document.getElementById("pancake").innerHTML=pancake;
-}
