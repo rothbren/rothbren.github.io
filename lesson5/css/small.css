@@ -1,0 +1,283 @@
+body {
+    font-size: 16px;
+    font-family: "Sansita", Ubuntu, sans-serif;
+}
+
+.maxwidth {
+    margin: 1.25rem auto;
+    max-width: 760px;
+    padding: 1.5px;
+    font-size: 0.8rem;
+}
+
+header {
+    background-color: #b96646;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer {
+    background-color: #b96646;
+    color: white;
+    font-family: Courier New, Courier, monospace;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 75px;
+}
+
+h1 {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-shadow: 8px 8px 8px #792b2b;
+    margin:0;
+}
+
+h2 {
+    color: #792b2b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color: #b96646;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    color: #792b2b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h5 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*navigation*/
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+nav {
+    font-family: Courier New, Courier, monospace;
+    font-weight: bold;
+    background-image: linear-gradient(#b96646, #792b2b);
+    text-align: center;
+    padding: 0.6rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav a:hover {
+    background-color: #792b2b;
+    color: white;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+/*end navigation*/
+
+/*slogan/header*/
+#slogan {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+#logo {
+    width: 125px;
+    height: auto;
+}
+
+#mainTitle {
+    margin-left: 45px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+    padding: 2px;
+}
+/*end slogan/header*/
+
+/*Weather summary*/
+#weathersummary_div {
+    position: relative;
+    margin: 0 auto;
+    max-width: 720px;
+}
+
+#weather_summary_picture {
+    width: 100%;
+    border: 2px solid #b96646;
+    margin-bottom: 2px;
+}
+
+#weather_summary {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    background: radial-gradient(#eee, #b96646);
+    padding: 7px;
+    opacity: .9;
+    left: 25px;
+}
+
+#weather_summary_title {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*end weather summary*/
+
+ /*current weather*/
+ .weather_pic_icons {
+    width: 60px;
+    height: auto;
+}
+/*end current weather*/
+
+/*table settings*/
+.five_day_forcast {
+    text-align: center;
+}
+table, td, th {
+    border: 1px solid;
+    align-items: center;
+}
+
+.forcast_and_images {
+    background-color: white;
+    color: black;  
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-family: Courier New, Courier, monospace;
+}
+
+.days_of_the_week {
+    background-color: #b96646;
+    color: white;  
+    font-family: Courier New, Courier, monospace;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+.weather_pic_thunderstorm {
+    width: 50px;
+    height: auto;
+}
+/*end table settings*/
+
+/*article*/
+#bradleepic {
+    height: auto;
+    width: 150px;
+    float: right;
+    margin: 2px;
+}
+
+.article_title {
+    align-self: center;
+}
+
+.article {
+    background-color: blanchedalmond;
+    margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 75px;
+}
+/*article*/
+
+/*contact information*/
+.grid_container {
+    max-width: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-row: auto auto auto;
+    grid-column: auto auto;
+}
+
+.contact_inform {
+    margin: 30px;
+    padding: 30px;
+}
+
+.preston_map {
+    display: none;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+/*end social media icons*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
