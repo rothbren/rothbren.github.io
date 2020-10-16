@@ -6,21 +6,27 @@
     <meta name="description" content="Home page for a weather website in Prestin created by Brenyn Rothwell">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Temperature Tracker Home Page</title>
+    <link rel="small icon" href="favicon.ico">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 
 <body>
     <header>
         <img id="logo" src="images/logo-burntorange2.jpg" alt="The Temperature Tracker logo">
-        
-        <section id="mainTitle"> 
-            <h1 id="title">Temperature Tracker</h1>  
+
+        <section id="mainTitle">
+            <h1 id="title">Temperature Tracker</h1>
             <div id="slogan"> trustworthy weather tracking today</div>
-        </section>        
+        </section>
+
+        <p id="pancake">
+
+        </p>
     </header>
 
     <nav class="clearfix">
@@ -36,18 +42,96 @@
     </nav>
 
     <main>
-        <h2>Home Page</h2>
-                <div class="contentbox">Hero With Weather Summary</div>
-                <div class="contentbox">5 Day Forcast</div>
-                <div class="contentbox">Article</div>
-                <div class="contentbox">Contact Information</div>   
+        <div class="weathersummary">
+            <p class="titles">Home Page</p>
+            <img src="images/preston-idaho-area-chamber-of-commerce.jpg">
+            <div id="weather_sum">
+                <p class="titles"> Weather Summary</p>
+                    Currently: Cloudy <br>
+                    Temperature: 55 &#8457; <br>
+                    Humidity: 50% <br>
+                    Percipitation: 0.2 inches <br>
+                    Wind Speed: 8 mph
+            </div>
+        </div>
+
+        <div class="five_day_forcast">
+            <h3>5 Day Forcast</h3>
+            <table class="weather_table">
+                <tr class="days_of_the_week">
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th> Wednesday</th>
+                    <th>Thrusday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr class="forcast_and_images">
+                    <td>
+                        <img src="images/iconfinder_Cloudy_Sunny_5729392.png" alt="sun behind a cloud">
+                        <div class="degrees">55 &#8457;</div>
+                    </td>
+                    <td>
+                        <img src="images/iconfinder_Cloudy_Sunny_5729392.png" alt="sun behind a cloud">
+                        <div class="degrees">67 &#8457;</div>
+                    </td>
+                    <td>
+                        <img src="images/iconfinder_Raining_5729383.png" alt="rain cloud">
+                        <div class="degrees">65 &#8457;</div>
+                    </td>
+                    <td>
+                        <img src="images/iconfinder_Lightning_5729386.png" alt="thunderstorm cloud">
+                        <div class="degrees">46 &#8457;</div>
+                    </td>
+                    <td>
+                        <img src="images/iconfinder_Windy_5729377.png" alt="wind">
+                        <div class="degrees">57 &#8457;</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="article">
+            <h4>Fall is Here!</h4>
+            <p id="article_author">By Brad H. R. </p>
+            <img id="bradleepic" alt="girl walking on a road" src="images/_DSC0119.jpg">
+            Fall is here! How exciting Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Animi laboriosam sit commodi excepturi eos consequatur exercitationem voluptas tenetur
+            distinctio doloremque, non asperiores totam neque aperiam pariatur explicabo provident fuga quam.
+            ipsum dolor sit amet consectetur adipisicing elit.
+            Animi laboriosam sit commodi excepturi eos consequatur exercitationem voluptas tenetur
+            distinctio doloremque, non asperiores totam neque aperiam pariatur explicabo provident fuga quam.
+            ipsum dolor sit amet consectetur adipisicing elit.
+            Animi laboriosam sit commodi excepturi eos consequatur exercitationem voluptas tenetur
+            distinctio doloremque, non asperiores totam neque aperiam pariatur explicabo provident fuga quam.
+            Animi laboriosam sit commodi excepturi eos consequatur exercitationem voluptas tenetur
+            distinctio doloremque, non asperiores totam neque aperiam pariatur explicabo provident fuga quam.
+            ipsum dolor sit amet consectetur adipisicing elit.
+            Animi laboriosam sit commodi excepturi eos consequatur exercitationem voluptas tenetur
+            distinctio doloremque, non asperiores totam neque aperiam pariatur explicabo provident fuga quam.
+        </div>
+
+        <div id="grid_container">
+            <div class="contact">
+                <section>
+                    <h5>Contact Information</h5>
+                    <p>0000 Address St. Preston, ID</p>
+                    <p>email@email.com</p>
+                    <p>000-000-0000</p>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </section>
+                <img src="images/map-of_preston.jpg" alt="map of Preston, Idaho"> 
+                <link rel="map link" href="https://www.google.com/maps/place/Preston,+ID+83263/@42.0997416,-111.9153444,13z/data=!3m1!4b1!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173?hl=en">
+            </div>
     </main>
 
     <footer>
         <p id='copyRight'> &#169; 2020 Temperture Tracker | Brenyn Rothwell <br>
-       <span id="currentdate"> </span></p>
-     </footer>
-   
-     <script src="js/javascript.js"></script>
-   </body>
-   </html>  
+            <span id="currentdate"> </span></p>
+    </footer>
+
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
