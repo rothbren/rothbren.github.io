@@ -12,23 +12,11 @@
         width: 135px;
     }
     
-    nav button {
-        display: none;
-    }
-
-    nav ul li {
-        float: left;      
-    }
-
-    nav ul li a {
-        padding: 0.6rem 1rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;    
-     }
-
-    nav ul.hide {
-        display: block;
+#flex-contact img {
+        width: 30%;
+        height: auto;
+        display: block; 
+        padding-right: 20px;
     }
     
     .weather_summary {
@@ -42,16 +30,5 @@
     top: 80px;
 	right: 500px;
     }
-    
-    .contact {
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 0 auto;
+
     }
-    
-    .contact img {
-        height: auto;
-        display: block;
-        position: relative;
-        float: left; 
-       }

@@ -33,11 +33,11 @@
           font-size: 20px;
     }
 
-    .preston_map {
-        width: 300px;
+    #flex-contact img {
+        width: 30%;
         height: auto;
-        margin: auto;
-        padding: 20px;
+        display: block; 
+        padding-right: 20px;
     }
 
     #weather_summary {
