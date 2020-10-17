@@ -230,9 +230,8 @@ th, td {
 
 /*contact information*/
 #flex-contact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     margin: 0 auto;
     padding: 20px;
@@ -250,20 +249,13 @@ th, td {
         display: none; 
         padding-right: 20px;
     }
-
-.media_img {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding: 0px;
-    margin: 0px;
+#contact {
+    width: 20%;
 }
-
-.socialMedia {
-    padding: 0px;
-    margin: 0px;
-    max-width: 45px;
+.media_img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 0.5px;
     height: auto;
 }
 

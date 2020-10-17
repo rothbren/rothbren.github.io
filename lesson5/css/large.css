@@ -34,7 +34,7 @@
     }
 
     #flex-contact img {
-        width: 30%;
+        width: 70%;
         height: auto;
         display: block; 
         padding-right: 20px;
@@ -44,4 +44,12 @@
         bottom: 225px;
         left: 70px;
         }
+    
+    .media_img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 5%;
+    height: auto;
 }
+}
+
