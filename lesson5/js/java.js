@@ -21,6 +21,7 @@ const months = [
     'December'
 ]
 
+
 const d = new Date();
 const dayName = daynames[d.getDay()];
 const monthName = months[d.getMonth()];
@@ -30,9 +31,7 @@ const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 
 document.getElementById('currentdate').textContent = fulldate;
 
-const d = new Date();
-let message = document.querySelector(".message");
-
-if (d.getDay() == 6) {
-    message.style.display = "block";
-};
+let pancake = document.querySelector(".pancake");
+if (dayName == "Friday") {
+    pancake.style.display = "block";
+}

@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <div class="message">
-        <p id="message-text">Saturday is Preston Pancakes in the Park! 9:00 a.m. at the city park pavilion.</p>
+    <div class="pancake">
+        <p id="pancake">Saturday is Preston Pancakes in the Park! 9:00 a.m. at the city park pavilion.</p>
     </div>
     <header>
 
@@ -27,12 +27,10 @@
             <h1 id="title">Temperature Tracker</h1>
             <div id="slogan"> trustworthy weather tracking today</div>
         </section>
-
+        <button class="menu_button" onclick="toggleMenu()"> &#9776; </button> 
 
     </header>
-
     <nav class="clearfix">
-        <button onclick="toggleMenu()"> &#9776; </button>
         <ul id="primaryNav" class="hide">
             <li class='active'><a href="#">Home</a></li>
             <li><a href="#">Preston</a></li>
@@ -47,7 +45,7 @@
 
         <div class="weathersummary">
             <p class="titles">Home Page</p>
-            <img src="images/preston-idaho-area-chamber-of-commerce.jpg">
+            <img src="images/preston-idaho-area-chamber-of-commerce.jpg" alt="image of the town called preston Idaho">
             <div id="weather_sum">
                 <p class="titles"> Weather Summary</p>
                 Currently: Cloudy <br>

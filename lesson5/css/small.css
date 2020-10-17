@@ -12,19 +12,20 @@ header {
     padding: 10px;
 }
 
-.message {
+.pancake {
     display: none;
     padding: 1em;
-    border: 1px solid #444444;
-    background-color: #43707c;
-    color: #ffffff;
+    border: 6px solid white;
+    background-color: #792b2b;
+    color: white;
 }
 
-.message p {
-    max-width: 960px;
+#pancake {
+    max-width: none;
     padding-left: 1.5em;
     padding-right: 1.5em;
     margin: 0 auto;
+    text-align: center;
 }
 
 footer {
@@ -70,7 +71,7 @@ h5 {
 }
 
 /*navigation*/
-nav button {
+header button {
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
