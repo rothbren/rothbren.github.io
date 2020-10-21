@@ -246,12 +246,12 @@ flex-direction: row;
 }
 
 #contact_title {
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
 .contact_items {
-    color: white;
+    color: black;
     margin: 10px;
 }
 
