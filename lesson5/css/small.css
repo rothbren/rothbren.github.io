@@ -230,41 +230,36 @@ th, td {
 /*article*/
 
 /*contact information*/
-#flex-contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+#contact_box {
+display: flex;
+flex-direction: row;
+    background-color: #b96646;
     justify-content: center;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #792b2b;  
+    align-items: center; 
 }
 
-#flex-contact p {
-    color: white;
-    padding-left: 8px;
-}
-    
-#flex-contact img {
-        width: 90%;
-        height: auto;
-        display: none; 
-        padding-right: 20px;
-    }
-#contact {
-    width: 20%;
-}
-.media_img {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 0.5px;
+#contact_img {
+    width: 30%;
     height: auto;
+    margin: 20px 10px 20px 60px;
 }
 
-.socialMedia:hover {
+#contact_title {
     color: white;
-    opacity: 0.75;
+    font-weight: bold;
 }
 
+.contact_items {
+    color: white;
+    margin: 10px;
+}
+
+.media_img {
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+}
 /*end social media icons*/
 
 .clearfix:after {

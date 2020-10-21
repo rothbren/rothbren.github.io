@@ -11,27 +11,13 @@
     #logo {
         width: 135px;
     }
-    
-#flex-contact img {
-        width: 70%;
-        height: auto;
-        display: block; 
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-    
+      
     .weather_summary {
     position: absolute;
     bottom: 250px;
     left: 50px;
     }
     
-.media_img {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 0.5px;
-    height: auto;
-}
     
     #weather_sum {
     position: absolute;
