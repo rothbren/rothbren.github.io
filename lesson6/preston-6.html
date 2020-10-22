@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Home page for a weather website in Prestin created by Brenyn Rothwell">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <title>Temperature Tracker Home Page</title>
     <link rel="small icon" href="favicon.ico">
     <link href="css/normalize.css" rel="stylesheet">
@@ -20,19 +20,19 @@
     </div>
     <header>
 
-        <img id="logo" src="images/logo-burntorange2.jpg" alt="The Temperature Tracker logo">
+        <img id="logo" src="images/invertlogo2.jpg" alt="The Temperature Tracker logo">
 
         <section id="mainTitle">
             <h1 id="title">Temperature Tracker</h1>
             <div id="slogan"> trustworthy weather tracking today</div>
         </section>
-        <button class="menu_button" onclick="toggleMenu()"> &#9776; </button> 
+        <button class="menu_button" onclick="toggleMenu()"> &#9776; </button>
 
     </header>
     <nav class="clearfix">
         <ul id="primaryNav" class="hide">
-            <li class='active'><a href="#">Home</a></li>
-            <li><a href="#">Preston</a></li>
+            <li><a href="#">Home</a></li>
+            <li class='active'><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -43,8 +43,13 @@
     <main>
 
         <div class="weathersummary">
-            <p class="titles">Home Page</p>
-            <img src="images/preston-idaho-area-chamber-of-commerce.jpg" alt="image of the town called preston Idaho">
+            <picture>
+                <img src="images/wdd230_image_franklinLarge_1080.jpg" alt="image of the town called preston Idaho"
+                srcset="images/wdd230_image_franklinMedium_824.jpeg"
+                srcset="images/wdd230_image_franklinSmall_515.jpg"
+                >
+            </picture>
+            
             <div id="weather_sum">
                 <p class="titles"> Weather Summary</p>
                 Currently: Cloudy <br>
@@ -56,7 +61,7 @@
         </div>
 
         <div class="five_day_forcast">
-            <h3>5 Day Forcast</h3>
+            <h2>5 Day Forcast</h2>
             <table class="weather_table">
                 <tr class="days_of_the_week">
                     <th>Monday</th>
@@ -91,7 +96,7 @@
         </div>
 
         <div class="article">
-            <h4>Fall is Here!</h4>
+            <p class="titles">Fall is Here!</p>
             <p id="article_author">By Brad H. R. </p>
             <img id="bradleepic" alt="girl walking on a road" src="images/_DSC0119.jpg">
             Fall is here! How exciting Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -110,20 +115,31 @@
             distinctio doloremque, non asperiores totam neque aperiam pariatur explicabo provident fuga quam.
         </div>
 
-        <div id="flex-contact">
-            <img id="contact" src="images/map-of_preston.jpg" alt="map of Preston, Idaho">
-            <section class="contact_info">
-                <h5>Contact Information</h5>
-                <p>0000 Address St. Preston, ID</p>
-                <p>email@email.com</p>
-                <p>000-000-0000</p>
-            <section class="media_img">
-                <a href="#"><img class="socialMedia1" src="images/iconfinder_Facebook_social_media_logo_1964400.png" alt="facbook icon"></a>
-                <a href="#"><img class="socialMedia2" src="images/iconfinder_Circled_Twitter_svg_5279123.png" alt="twitter icon"></a>
-                <a href="#"><img class="socialMedia3" src="images/iconfinder_YouTube_Play_social_media_logo_1964418.png" alt="youtube icon"></a>
-                <a href="#"><img class="socialMedia4" src="images/iconfinder_Circled_Instagram_svg_5279112.png" alt="instagram icon"></a> 
-            </section>
-            </section>
+        <div id="contact_box">
+            <img id="contact_img" src="images/map-of_preston.jpg" alt="map of Preston, Idaho">
+            
+        <div>
+            <p id="contact_title">Contact Information</p> 
+            <p class="contact_items">
+                0000 Address St. Preston, ID <br>
+                email@email.com <br>
+                000-000-0000</p> <br>
+                
+                <a href="https://www.facebook.com/">
+                    <img class="media_img" alt="facbook icon"
+                        src="images/iconfinder_Facebook_social_media_logo_1964400.png">
+                </a>
+                <a href="https://twitter.com/?lang=en">
+                    <img class="media_img" alt="twitter icon" src="images/iconfinder_Circled_Twitter_svg_5279123.png">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img class="media_img" alt="youtube icon"
+                    src="images/iconfinder_YouTube_Play_social_media_logo_1964418.png">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img class="media_img" alt="instagram icon" src="images/iconfinder_Circled_Instagram_svg_5279112.png">  
+                </a>
+            </div>
 
         </div>
     </main>
@@ -134,8 +150,6 @@
     </footer>
 
     <script src="js/java.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script> WebFont.load({ google: {families: ['Courier Prime']}});</script>
 </body>
 
 </html>
