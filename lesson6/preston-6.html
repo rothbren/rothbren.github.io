@@ -16,7 +16,7 @@
 
 <body>
     <div class="pancake">
-        <p id="pancake">Saturday is Preston Pancakes in the Park! 9:00 a.m. at the city park pavilion.</p>
+        <p>Saturday is Preston Pancakes in the Park! 9:00 a.m. at the city park pavilion.</p>
     </div>
     <header>
 
@@ -40,14 +40,15 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="clearfix">
 
         <div class="weathersummary">
-            <picture>
-                <img src="images/wdd230_image_franklinLarge_1080.jpg" alt="image of the town called preston Idaho"
-                    srcset="images/wdd230_image_franklinMedium_824.jpeg"
-                    srcset="images/wdd230_image_franklinSmall_515.jpg">
-            </picture>
+            <figure class="firstimg">
+                <img src="images/wdd230_image_franklinLarge_1280.jpg" alt="image of the town called preston Idaho" sizes="100vw"
+                    srcset="images/wdd230_image_franklinLarge_1080.jpg 1080w,
+                            images/wdd230_image_franklinMedium_824.jpg 824w,
+                            images/wdd230_image_franklinSmall_515.jpg 515w">
+            </figure>
 
             <div id="weather_sum">
                 <p class="titles"> Weather Summary</p>
@@ -98,7 +99,9 @@
         <div class="article">
             <p class="titles">Fall is Here!</p>
             <p id="article_author">By Brad H. R. </p>
-            <img id="bradleepic" alt="girl walking on a road" src="images/_DSC0119.jpg">
+            <figure class="bradleepic">
+                <img alt="girl walking on a road" src="images/bradlee_1080.jpg">
+            </figure>
             Fall is here! How exciting Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Animi laboriosam sit commodi excepturi eos consequatur exercitationem voluptas tenetur
             distinctio doloremque, non asperiores totam neque aperiam pariatur explicabo provident fuga quam.
@@ -112,7 +115,7 @@
 
         <div id="contact_box">
             <img id="contact_img" src="images/map-of_preston.jpg" alt="map of Preston, Idaho">
-
+            
             <div>
                 <p id="contact_title">Contact Information</p>
                 <p class="contact_items">

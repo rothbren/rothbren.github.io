@@ -31,7 +31,6 @@ const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 
 document.getElementById('currentdate').textContent = fulldate;
 
-let pancake = document.querySelector("pancake");
-if (dayName == "Friday") {
-    pancake.style.display = "block";
+if (new Date.getDay != 5) {
+    document.querySelector("pancake").style.display = "block";
 }

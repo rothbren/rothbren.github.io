@@ -1,46 +1,7 @@
+/********************BODY*************************/
 body {
     font-size: 16px;
     font-family: "Sansita", Ubuntu, sans-serif;
-}
-
-header {
-    background-color: #792b2b;
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.pancake {
-    display: none;
-    padding: 1em;
-    border: 6px solid white;
-    background-color: #792b2b;
-    color: white;
-}
-
-#pancake {
-    max-width: none;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    margin: 0 auto;
-    text-align: center;
-}
-
-footer {
-    background-color: #E8CDC2;
-    color: #792b2b;
-    font-weight: bold;
-    font-family: Courier New, Courier, monospace;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 75px;
 }
 
 h1 {
@@ -69,8 +30,53 @@ h5 {
     color: white !important;
     font-family: Arial, Helvetica, sans-serif;
 }
+/********************BODY*************************/
 
-/*navigation*/
+
+/*********************HEADER***********************/
+header {
+    background-color: #792b2b;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pancake {
+    display: none;
+    padding: 1em;
+    border: 6px solid white;
+    background-color: #792b2b;
+    color: white;
+    max-width: none;
+    text-align: center;
+}
+
+/*slogan/header*/
+#slogan {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+#logo {
+    width: 125px;
+    height: auto;
+}
+
+#mainTitle {
+    margin-left: 45px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+    padding: 2px;
+}
+/*end slogan/header*/
+/*********************HEADER***********************/
+
+
+/**********************NAV***********************/
 header button {
     margin: .2rem 2%;
     background-color: transparent;
@@ -118,28 +124,19 @@ nav ul li.active a {
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
 }
-/*end navigation*/
+/**********************NAV***********************/
 
-/*slogan/header*/
-#slogan {
-    color: rgba(255, 255, 255, 0.7);
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+
+/************************MAIN*******************/
+main figure.firstimg {
+    max-width: 760px;
+    margin: auto;
+
 }
 
-#logo {
-    width: 125px;
-    height: auto;
+main figure.firstimg img {
+    width: 100%;
 }
-
-#mainTitle {
-    margin-left: 45px;
-    margin-right: 2px;
-    margin-bottom: 0px;
-    padding: 2px;
-}
-/*end slogan/header*/
 
 /*Weather summary*/
 .weathersummary {
@@ -213,7 +210,7 @@ th, td {
 /*end table settings*/
 
 /*article*/
-#bradleepic {
+figure.bradleepic img {
     height: auto;
     width: 150px;
     float: right;
@@ -259,8 +256,25 @@ flex-direction: row;
     width: 20px;
     height: auto;
     margin-left: 10px;
+}/*end social media icons*/
+/************************MAIN*******************/
+
+/*********************FOOTER**********************/
+footer {
+    background-color: #E8CDC2;
+    color: #792b2b;
+    font-weight: bold;
+    font-family: Courier New, Courier, monospace;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 75px;
 }
-/*end social media icons*/
+/*********************FOOTER**********************/
 
 .clearfix:after {
     content: "";
