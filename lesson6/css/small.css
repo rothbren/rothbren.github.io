@@ -44,7 +44,7 @@ header {
 }
 
 .pancake {
-    display: none;
+    display: block;
     padding: 1em;
     border: 6px solid white;
     background-color: #792b2b;
