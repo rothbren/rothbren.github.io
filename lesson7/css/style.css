@@ -1,23 +1,22 @@
-h1, footer {
+h1,
+footer {
     text-align: center;
-  }
-  
-  .pic_grid {
-      display: grid;
-      justify-content: center;
-  
-  }
-  
-  
-  section img[data-src] {
-      min-width: 400px;
-      min-height: auto;
-      filter: blur(0.2em);
-    }
-    
-  section img {
-     margin: 10px;
+}
+
+.pic_grid {
+    display: grid;
+    justify-content: center;
+
+}
+
+
+section img[data-src] {
+    filter: blur(0.2em);
+}
+
+section img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 10px;
     padding: 2px;
-      filter: blur(0em);
-      transition: filter 0.5s;
-    }
+}
