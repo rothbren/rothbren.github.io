@@ -1,17 +1,20 @@
-h1,
-footer {
-    text-align: center;
-}
-
 .pic_grid {
     display: grid;
     justify-content: center;
-
+    grid-template-columns: 315px;
+    margin: 10px;
+    padding: 1px;
 }
-
 
 section img[data-src] {
     filter: blur(0.2em);
+}
+
+.gallery {
+    width: 300px;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
 }
 
 section img {
@@ -19,5 +22,4 @@ section img {
     transition: filter 0.5s;
     margin: 10px;
     padding: 2px;
-    max-width: 10px;
 }

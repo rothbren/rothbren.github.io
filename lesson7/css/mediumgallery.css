@@ -1,0 +1,7 @@
+@media only screen and (min-width: 35em) {
+.pic_grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 315px 315px;
+}
+}
