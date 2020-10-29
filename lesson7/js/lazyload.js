@@ -11,7 +11,7 @@ imagesToLoad.forEach((img) => {
   });
 
   let options = {
-    root: document.querySelector('#scrollArea'),
+    root: document.querySelector('[data-src]'),
     rootMargin: '0px',
     threshold: 1.0
   }
