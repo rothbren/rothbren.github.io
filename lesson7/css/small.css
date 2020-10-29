@@ -281,3 +281,27 @@ footer {
     display: table;
     clear: both;
 }
+
+
+/******************GALLERY PAGE**********************/
+.gallery_grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 315px;
+    margin: 10px;
+}
+
+.gallery_grid img[data-src] {
+    filter: blur(0.2em);
+}
+
+.gallery_grid img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 10px;
+    padding: 2px;
+    width: 300px;
+    height: auto;
+}
+
+
