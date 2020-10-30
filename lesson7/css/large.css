@@ -50,4 +50,13 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.gallery_img:hover {box-shadow: 0 0 50px #333;}
+
+.figcap_gallery {
+    display: block;
+    margin-left: 10px;
+    font-family: "Courier New";
 }
+
+}
+

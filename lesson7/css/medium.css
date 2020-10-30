@@ -32,4 +32,8 @@
 .gallery_grid {
     grid-template-columns: 1fr 1fr;
 }
+
+.figcap_gallery {
+    display: none;
+}
 }
