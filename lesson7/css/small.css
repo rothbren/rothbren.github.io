@@ -292,12 +292,12 @@ footer {
 }
 
 .gallery_grid img[data-src] {
-    filter: blur(0.2em);
+    filter: blur(0.5em);
 }
 
 .gallery_grid img {
     filter: blur(0em);
-    transition: filter 0.5s;
+    transition: filter 1s;
     margin: 10px;
     padding: 2px;
     width: 300px;

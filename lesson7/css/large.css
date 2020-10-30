@@ -47,8 +47,6 @@
 .gallery:hover {box-shadow: 0 0 50px #b96646;}
 
 .gallery_grid {
-    display: grid;
-    justify-content: center;
     grid-template-columns: 315px 315px 315px;
 }
 
