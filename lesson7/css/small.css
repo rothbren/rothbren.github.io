@@ -287,20 +287,24 @@ footer {
 .gallery_grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: 315px;
+    grid-template-columns: 1fr;
     margin: 10px;
 }
 
-.gallery_grid img[data-src] {
+.gallery_img img[data-src] {
     filter: blur(0.5em);
 }
 
-.gallery_grid img {
+.gallery_img {
+    max-width: 360px;
+}
+
+.gallery_img img{
     filter: blur(0em);
     transition: filter 1s;
     margin: 10px;
     padding: 2px;
-    width: 300px;
+    width: 100%;
     height: auto;
 }
 
