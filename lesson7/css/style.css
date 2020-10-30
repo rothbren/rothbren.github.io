@@ -3,7 +3,7 @@ footer {
     text-align: center;
 }
 
-.pic_grid {
+main {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -11,15 +11,15 @@ footer {
 }
 
 img {
-    padding: 10px;
+    padding: 5px;
    
 }
 
-section img[data-src] {
+picture img[data-src] {
     filter: blur(5px);
 }
 
-section img {
+picture img {
     filter: blur(0px);
     transition: filter 0.5s;
 }
