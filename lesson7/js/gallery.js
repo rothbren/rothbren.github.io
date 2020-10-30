@@ -1,33 +1,36 @@
-/*let imagesToLoad = document.querySelectorAll("img[data-src]");
-
-const imgOptions = {
-  threshold: 0.5
-};
+  const imagesToLoad = document.querySelectorAll("img[data-src]");
 
 
 
-const loadImages = (image) => {
-  image.setAttribute("src", image.getAttribute("data-src"));
-  image.onload = () => {
-    image.removeAttribute("data-src");
+  const imgOptions = {
+    threshold: 0.5
   };
-};
 
-  if('IntersectionObserver' in window) {
+  const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {
+      image.removeAttribute("data-src");
+    };
+  };
+
+
+  if ('IntersectionObserver' in window) {
     const imgObserver = new IntersectionObserver((items, imgObserver) => {
       items.forEach((item) => {
-        if(item.isIntersecting) {
+        if (item.isIntersecting) {
+          console.log("Target", item.target)
           loadImages(item.target);
           imgObserver.unobserve(item.target);
         }
       });
     }, imgOptions);
 
-  imagesToLoad.forEach((img) => {
+
+    imagesToLoad.forEach((img) => {
       imgObserver.observe(img);
     });
   } else {
     imagesToLoad.forEach((img) => {
       loadImages(img);
     });
-  } */
+  }

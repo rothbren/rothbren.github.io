@@ -286,7 +286,7 @@ footer {
 /******************GALLERY PAGE**********************/
 .gallery_grid {
     display: grid;
-    justify-content: center;
+    justify-items: center;
     grid-template-columns: 1fr;
     margin: 10px;
 }
@@ -295,17 +295,15 @@ footer {
     filter: blur(0.5em);
 }
 
-.gallery_img {
-    max-width: 360px;
-}
+
 
 .gallery_img img{
     filter: blur(0em);
-    transition: filter 1s;
+    transition: filter 3s;
     margin: 10px;
     padding: 2px;
-    width: 100%;
-    height: auto;
+    max-width: 260px;
 }
 
+.gallery_img:hover {box-shadow: 0 0 50px #333;}
 

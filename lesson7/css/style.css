@@ -3,7 +3,7 @@ footer {
     text-align: center;
 }
 
-main {
+.photo_grid {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -23,5 +23,4 @@ picture img {
     filter: blur(0px);
     transition: filter 0.5s;
 }
-
 

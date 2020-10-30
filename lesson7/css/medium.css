@@ -25,10 +25,11 @@
 	right: 500px;
     }
 
-    }
+    
 
     
 /******************GALLERY PAGE**********************/
 .gallery_grid {
     grid-template-columns: 1fr 1fr;
+}
 }
