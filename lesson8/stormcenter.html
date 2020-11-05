@@ -48,7 +48,7 @@
     <form method="get" actions="thanks.html">
         <fieldset>
             <legend>Applicant Information</legend>
-            <label class="top">Full Name*<input type="text" name="fname" required></label>
+            <label class="top">Full Name*<input type="text" name="fname"  minlength="5" required placeholder="firstname lastname"></label>
             <label class="top">Email*<input type="emial" name="email" placeholder="someone@gmail.com" required></label>
             <label class="top">Phone<input type="tel" name="phone" placeholder="1234567891" required></label>
             <label class="top">Zip Code<input type="number" name="zipCode" required></label>
@@ -61,23 +61,24 @@
             <label class="top">Storm Type
                 <select name="stormType">
                     <option value="">please select &#9662;</option>
-                    <option value="FlashFLood">Flash Flood</option>
-                    <option value="hail">Hail</option>
-                    <option value="hurricane">Hurricane</option>
-                    <option value="thunderstorm">Thunderstorm</option>
-                    <option value="tornado">Tornado</option>
-                    <option value="lightning">Lightning Storm</option>
-                    <option value="other">Other</option>
+                    <option value="FlashFLood" name="flood">Flash Flood</option>
+                    <option value="hail" name="hail">Hail</option>
+                    <option value="hurricane" name="hurrican">Hurricane</option>
+                    <option value="thunderstorm" name="thunderstorm">Thunderstorm</option>
+                    <option value="tornado" name="tornado">Tornado</option>
+                    <option value="lightning" name="lightning">Lightning Storm</option>
+                    <option value="other" name="other">Other</option>
                 </select>
             </label>
 
-            <label class="storm_severity">Storm Severity
+            <label class="storm_severity" for="rating" name="stormrate">Storm Intensity Rating 
                 <input type="range" value="5" min="1" max="10" step="1" list="tickmarks"
                     oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue">10</span>
-            </label>
+            
+        </label>
 
-            <label class="storm_severity">Storm Region
+            <label class="storm_severity">Storm Region <br>
                 <select name="stormType">
                     <option value="">Select Region&#9662;</option>
                     <option value="preston">Preston</option>

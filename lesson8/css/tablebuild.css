@@ -4,9 +4,10 @@ body {
 }
 
 table {
-    font-family: "Ubuntu", sans-serif;
+    font-family: Ubuntu, sans-serif;
     text-align: center;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+    background: lightgray;
 }
 
 th, td {
