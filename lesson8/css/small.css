@@ -349,7 +349,7 @@ form label.sbs {
     color: #555;
 }
 /***submit button***/
-form input.submitbtn {
+form input.submitBtn {
     border: none;
     background-color: #792b2b;
     color: white;
@@ -378,4 +378,10 @@ form label.top input:required:valid {
     padding-top: 1rem;
     color: #792b2b;
     font-size: 18px;
+}
+
+.thanks_comfirmation {
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
 }
