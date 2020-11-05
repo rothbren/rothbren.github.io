@@ -71,10 +71,10 @@
                 </select>
             </label>
 
-            <label class="storm_severity" for="rating" name="stormrate">Storm Intensity Rating 
+            <label class="storm_severity" name="stormrate" for="rating">Storm Intensity Rating 
                 <input type="range" value="5" min="1" max="10" step="1" list="tickmarks"
                     oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                <span id="ratingvalue">10</span>
+                <span>10</span>
             
         </label>
 
@@ -93,15 +93,15 @@
             <label>
                 <div>Are you in danger?</div>
                 <label class="sbs">
-                    <input type="radio" name="danger" value="yes"> Yes
+                    <input type="radio" name="danger" value="Yes"> Yes
                 </label>
 
                 <label class="sbs">
-                    <input type="radio" name="danger" value="no"> No
+                    <input type="radio" name="danger" value="No"> No
                 </label>
 
                 <label class="sbs">
-                    <input type="radio" name="danger" value="maybe"> Maybe
+                    <input type="radio" name="danger" value="Maybe"> Maybe
                 </label>
         </fieldset>
 
