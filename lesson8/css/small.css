@@ -309,3 +309,73 @@ footer {
     display: none;
 }
 
+/******************STORM CENTER PAGE*******************/
+form fieldset {
+    margin: auto auto 30px auto;
+    border: 1px solid #445b44;
+    border-radius: 10px;
+    max-width: 360px;
+}
+
+form legend {
+    color: #444455;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #792b2b;
+    font-size: 18px;
+}
+
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .755rem;
+    color: gray;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+/***submit button***/
+form input.submitbtn {
+    border: none;
+    background-color: #792b2b;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 20px;
+    width: 96%;
+    max-width: 360px;
+    
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+#comments_box {
+    margin: 10px;
+}
+
+.storm_severity {
+    display: block;
+    padding-top: 1rem;
+    color: #792b2b;
+    font-size: 18px;
+}

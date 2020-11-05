@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Home page for a weather website in Prestin created by Brenyn Rothwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>Temperature Tracker Home Page</title>
+
+    <link rel="small icon" href="favicon.ico">
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+
+    <script src="js/gallery.js" defer></script>
+
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+
+        <img id="logo" src="images/invertlogo2.jpg" alt="The Temperature Tracker logo">
+
+        <section id="mainTitle">
+            <h1 id="title">Temperature Tracker</h1>
+            <div id="slogan"> trustworthy weather tracking today</div>
+        </section>
+        <button class="menu_button" onclick="toggleMenu()"> &#9776; </button>
+
+    </header>
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li><a href="https://rothbren.github.io/lesson4/preston-4.html">Home</a></li>
+            <li><a href="https://rothbren.github.io/lesson5/preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class='active'><a href="">Storm Center</a></li>
+            <li><a href="https://rothbren.github.io/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+</body>
+
+<main>
+    <h1>Course Proposal Application</h1>
+    <form method="get" actions="thanks.html">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label class="top">Full Name*<input type="text" name="fname" required></label>
+            <label class="top">Email*<input type="emial" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Phone<input type="tel" name="phone" placeholder="1234567891" required></label>
+            <label class="top">Zip Code<input type="number" name="zipCode" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Storm Information</legend>
+            <label class="top">Date<input type="date" name="date" required></label>
+
+            <label class="top">Storm Type
+                <select name="stormType">
+                    <option value="">please select &#9662;</option>
+                    <option value="FlashFLood">Flash Flood</option>
+                    <option value="hail">Hail</option>
+                    <option value="hurricane">Hurricane</option>
+                    <option value="thunderstorm">Thunderstorm</option>
+                    <option value="tornado">Tornado</option>
+                    <option value="lightning">Lightning Storm</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+
+            <label class="storm_severity">Storm Severity
+                <input type="range" value="5" min="1" max="10" step="1" list="tickmarks"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">10</span>
+            </label>
+
+            <label class="storm_severity">Storm Region
+                <select name="stormType">
+                    <option value="">Select Region&#9662;</option>
+                    <option value="preston">Preston</option>
+                    <option value="sodaSprings">Soda Springs</option>
+                    <option value="fishHaven">Fish Haven</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Danger Level</legend>
+            <label>
+                <div>Are you in danger?</div>
+                <label class="sbs">
+                    <input type="radio" name="danger" value="yes"> Yes
+                </label>
+
+                <label class="sbs">
+                    <input type="radio" name="danger" value="no"> No
+                </label>
+
+                <label class="sbs">
+                    <input type="radio" name="danger" value="maybe"> Maybe
+                </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other</legend>
+            <label class="top">
+                <div>Additional Information or Comments</div>
+                <textarea id="comments_box" name="comment_box" rows="4" cols="35"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Report the Weather" class="submitbtn">
+    </form>
+</main>
+
+<footer>
+    <p id='copyRight'> &#169; 2020 Temperture Tracker | Brenyn Rothwell <br>
+        <span id="currentdate"> </span></p>
+</footer>
+
+<script src="js/java.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: ['Courier New']
+        }
+    });
+</script>
+</body>
+
+</html>
