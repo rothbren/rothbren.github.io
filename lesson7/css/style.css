@@ -3,7 +3,7 @@ footer {
     text-align: center;
 }
 
-.photo_grid {
+body{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
