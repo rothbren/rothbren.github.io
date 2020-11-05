@@ -41,7 +41,6 @@
             <li><a href="https://rothbren.github.io/lesson7/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
-</body>
 
 <main>
     <form method="get" action="thanks.html">
@@ -71,7 +70,7 @@
                 </select>
             </label>
 
-            <label class="storm_severity" name="stormrate" for="rating">Storm Intensity Rating:&nbsp;&nbsp;&nbsp;<br>
+            <label class="storm_severity" name="stormrate">Storm Intensity Rating:&nbsp;&nbsp;&nbsp;<br>
                 <input type="range" id="rating" value="10" min="1" max="10" step="1" list="tickmarks"
                     oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue">10</span>
@@ -103,9 +102,9 @@
 
         <fieldset>
             <legend>Danger Level</legend>
-            <label>
-                <div>Are you in danger?</div>
-                <label class="sbs">
+            
+                <div class="sbs">Are you in danger?</div>
+                <label>
                     <input type="radio" name="danger" value="Yes"> Yes
                 </label>
 
