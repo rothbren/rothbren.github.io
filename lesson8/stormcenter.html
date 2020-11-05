@@ -25,7 +25,7 @@
         <img id="logo" src="images/invertlogo2.jpg" alt="The Temperature Tracker logo">
 
         <section id="mainTitle">
-            <h1 id="title">Temperature Tracker</h1>
+            <h1>Temperature Tracker</h1>
             <div id="slogan"> trustworthy weather tracking today</div>
         </section>
         <button class="menu_button" onclick="toggleMenu()"> &#9776; </button>
@@ -44,11 +44,11 @@
 </body>
 
 <main>
-    <h1>Course Proposal Application</h1>
     <form method="get" action="thanks.html">
         <fieldset>
             <legend>Contact Information</legend>
-            <label class="top">Full Name*<input type="text" name="fname"  minlength="5" required placeholder="firstname lastname"></label>
+            <label class="top">Full Name*<input type="text" name="fname" minlength="5" required
+                    placeholder="firstname lastname"></label>
             <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
             <label class="top">Phone*<input type="tel" name="phone" placeholder="1234567891" required></label>
             <label class="top">Zip Code<input type="number" name="zipCode" required></label>
@@ -71,12 +71,25 @@
                 </select>
             </label>
 
-            <label class="storm_severity" name="stormrate" for="rating">Storm Intensity Rating 
-                <input type="range" value="5" min="1" max="10" step="1" list="tickmarks"
+            <label class="storm_severity" name="stormrate" for="rating">Storm Intensity Rating:&nbsp;&nbsp;&nbsp;<br>
+                <input type="range" id="rating" value="10" min="1" max="10" step="1" list="tickmarks"
                     oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                <span>10</span>
+                <span id="ratingvalue">10</span>
+            </label>
             
-        </label>
+            <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist>
 
             <label class="storm_severity">Storm Region <br>
                 <select name="stormType">

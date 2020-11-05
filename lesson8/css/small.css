@@ -311,7 +311,7 @@ footer {
 
 /******************STORM CENTER PAGE*******************/
 form fieldset {
-    margin: auto auto 30px auto;
+    margin: 20px auto 30px auto;
     border: 1px solid #445b44;
     border-radius: 10px;
     max-width: 360px;
