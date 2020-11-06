@@ -355,11 +355,15 @@ form input.submitBtn {
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin: 20px;
     width: 96%;
     max-width: 360px;
-    
 }
+
+.submit_button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}   
 
 form label.top input:required {
     border-left: red solid 6px;
