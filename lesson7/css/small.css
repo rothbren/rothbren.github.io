@@ -295,8 +295,6 @@ footer {
     filter: blur(0.5em);
 }
 
-
-
 .gallery_img img{
     filter: blur(0em);
     transition: filter 3s;
