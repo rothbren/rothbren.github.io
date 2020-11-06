@@ -71,7 +71,7 @@
             </label>
 
             <label class="storm_severity" >Storm Intensity Rating:&nbsp;&nbsp;&nbsp;<br>
-                <input type="range" id="rating" name="stormrate" value="10" min="1" max="10" step="1" list="tickmarks"
+                <input type="range" id="rating" value="10" min="1" max="10" step="1" list="tickmarks"
                     oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue">10</span>
             </label>
@@ -104,7 +104,7 @@
             <legend>Danger Level</legend>
             
                 <div class="sbs">Are you in danger?</div>
-                <label>
+                <label class="sbs">
                     <input type="radio" name="danger" value="Yes"> Yes
                 </label>
 
@@ -120,7 +120,7 @@
         <fieldset>
             <legend>Other</legend>
                 <div class="top">Additional Information or Comments</div>
-            <label>    
+            <label class="top">    
                 <textarea id="comments_box" name="comment_box" rows="4" cols="35"></textarea>
             </label>
         </fieldset>
