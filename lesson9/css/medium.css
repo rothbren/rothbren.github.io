@@ -1,0 +1,39 @@
+@media only screen and (min-width: 35em) {
+    h1 {
+        font-size: 30px;
+        margin: 0px;
+    }
+    
+    #slogan {
+        font-size: 15px;
+    }
+    
+    #logo {
+        width: 135px;
+    }
+      
+    .weather_summary {
+    position: absolute;
+    bottom: 250px;
+    left: 50px;
+    }
+    
+    
+    #weather_sum {
+    position: absolute;
+    top: 80px;
+	right: 500px;
+    }
+
+    
+
+    
+/******************GALLERY PAGE**********************/
+.gallery_grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.figcap_gallery {
+    display: none;
+}
+}

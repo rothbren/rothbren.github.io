@@ -1,0 +1,61 @@
+@media only screen and (min-width: 64rem) {
+    #logo {
+        width: 200px;
+    }
+
+    header button {
+        display: none;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        padding: 0.6rem 1rem;
+     }
+
+    nav ul {
+        margin-left: 2%;
+        font-size: 42px;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    h1 {
+        font-size: 35px;
+        margin: 1px;
+    }
+        
+    #slogan {
+          font-size: 20px;
+    }
+
+    #weather_summary {
+        bottom: 225px;
+        left: 70px;
+        }
+    
+
+
+
+
+
+/******************GALLERY PAGE**********************/
+.gallery_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery_img:hover {box-shadow: 0 0 50px #333;}
+
+.figcap_gallery {
+    display: block;
+    margin-left: 10px;
+    font-family: "Courier New";
+}
+    
+
+}
+
