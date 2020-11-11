@@ -12,7 +12,8 @@ fetch(requestURL)
 
  const prophets = jsonObject['prophets'];
 
-    for (let i = 0; i < prophets.length; i++ ) {let card = document.createElement('section');
+    for (let i = 0; i < prophets.length; i++ ) {
+    let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let birth_date = document.createElement('p');
     let birth_place = document.createElement('p');

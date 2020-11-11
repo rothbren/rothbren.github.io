@@ -51,7 +51,7 @@ img {
 /**************FOOTER*************/
 
 /**************-MEDIUM AND LARGE QUERY*************/
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 35em) {
     main div.cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -60,7 +60,7 @@ img {
 
 }
 
-@media only screen and (min-width: 85em) {
+@media only screen and (min-width: 64em) {
     main div.cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
