@@ -13,7 +13,7 @@ h1 {
 
 h2 {
     color: #792b2b;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: courier prime, monospace;
 }
 
 h3 {
@@ -389,3 +389,57 @@ form label.top input:required:valid {
     padding: 20px;
     text-align: center;
 }
+
+/*******************HOME PAGE**********************/
+.website_intro {
+    max-width: 960px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
+    background-color: #E8CDC2;
+    font-family: 'Ariel Nova', sans-serif;
+}
+
+info_blocks {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+div.town_info {
+    max-width: 960px;
+    margin: auto;
+    padding: 40px;
+    background-color: #E8CDC2;
+    font-family: 'Noto Serif', serif;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div.town_info:nth-child(odd) img {
+    grid-column: 2;
+}
+
+div.town_info:nth-child(odd) {
+    grid-column: 1;
+    grid-row: 1
+}
+
+motto {
+    font-style: italic;
+    color: #b96646;
+    font-weight: bold;
+    margin: 0px;
+}
+
+name {
+    font-family: courier new, serif;
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+
+

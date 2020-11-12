@@ -36,4 +36,10 @@
 .figcap_gallery {
     display: none;
 }
+    
+    /*****************HOME PAGE*************************/ 
+   div.town_info {
+    grid-template-columns: 1fr 1fr;
+
+}
 }
