@@ -10,6 +10,7 @@ fetch(townURL)
         const towns = jasonObject["towns"];
 
         for (let i = 0; i < towns.length; i++ ){
+            if(towns[i].name == 'Preston' || towns[i].name == 'Soda Springs'|| towns[i].name == 'Fish Haven'){
             let town_info = document.createElement('info_blocks');
             let name = document.createElement('h2');
             let photo = document.createElement('img');
@@ -37,7 +38,7 @@ fetch(townURL)
             town_info.appendChild(photo);
 
             document.querySelector('div.town_info').appendChild(town_info);
-
+            }
         }
     })
 
