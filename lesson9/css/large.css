@@ -57,12 +57,35 @@
 }
     
 /*******************HOME PAGE***************************/
-  div.town_info {
-    grid-template-columns: 1fr 1fr 1fr;
-    }
-    div.town_info img {
+info_blocks:nth-child(even) img{
     display: block;
-   width: 400px;
-    height: auto;   
+    grid-column: 1;
 }
+
+info_blocks:nth-child(even) p{
+    grid-column: 3;
 }
+
+info_blocks:nth-child(even) h2{
+    grid-column: 3;
+}
+
+info_blocks:nth-child(even) motto{
+    grid-column: 3;
+}
+
+info_blocks img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    width: 400px;
+}
+
+info_blocks p {
+    grid-column-start: 1;
+    margin: 2px;
+}
+
+}
+    

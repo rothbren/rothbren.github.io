@@ -394,44 +394,62 @@ form label.top input:required:valid {
 .website_intro {
     margin: auto;
     padding: 80px;
-    
     font-family: 'Ariel Nova', sans-serif;
 }
 
 info_blocks {
     background-color: white;
+    align-items: center;
+    text-align: center;
+    max-width: 660px;
     margin: 10px;
     padding: 20px;
-    text-align: center;
-     
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+info_blocks img {
+    width: 300px;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+}
+
+info_blocks p {
+    grid-column-start: 1;
+    margin: 2px;
 }
 
 div.town_info {
-    margin: auto auto 80px auto;
-    padding: 40px;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
     background-color: #b96646;
     display: grid;
-    grid-template-columns: 1fr;
-    /*! font-family: ariel nova, sans-serf; */
+    grid-template-rows: 1fr;
 }
 
 
 motto {
+    margin-bottom: 20px;
     font-style: italic;
     color: #b96646;
     font-weight: bold;
+    grid-column-start: 1;
+    grid-row-start: 2;
 }
 
 name {
     font-family: courier new, serif;
-    font-size: 20px;
-    margin: 20px;
+    margin: 0px;
+    padding: 0.5px;
+    grid-column-start: 1;
+    grid-row-start: 1;
 }
 
-div.town_info p {
-    
-   
-}
+
 
 
 
