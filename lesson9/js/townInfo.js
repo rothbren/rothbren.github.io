@@ -28,6 +28,7 @@ fetch(townURL)
                 //events.textContent = 'Events: ' + towns[i].events;
                 photo.setAttribute("src", towns[i].photo);
                 photo.setAttribute("height", "205");
+                photo.setAttribute('alt', name.textContent + '-' + towns[i].order);
 
                 town_info.appendChild(name);
                 town_info.appendChild(motto);

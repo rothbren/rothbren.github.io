@@ -394,7 +394,7 @@ form label.top input:required:valid {
 .website_intro {
     margin: auto;
     padding: 80px;
-    background-color: #E8CDC2;
+    
     font-family: 'Ariel Nova', sans-serif;
 }
 
@@ -407,7 +407,7 @@ info_blocks {
 }
 
 div.town_info {
-    margin: auto;
+    margin: auto auto 80px auto;
     padding: 40px;
     background-color: #b96646;
     display: grid;
