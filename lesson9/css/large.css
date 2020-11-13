@@ -59,5 +59,10 @@
 /*******************HOME PAGE***************************/
   div.town_info {
     grid-template-columns: 1fr 1fr 1fr;
-
+    }
+    div.town_info img {
+    display: block;
+   width: 400px;
+    height: auto;   
+}
 }
