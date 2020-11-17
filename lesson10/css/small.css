@@ -1,0 +1,455 @@
+/********************BODY*************************/
+body {
+    font-size: 16px;
+    font-family: "Sansita", Ubuntu, sans-serif;
+}
+
+h1 {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin:0;
+}
+
+h2 {
+    color: #792b2b;
+    font-family: courier prime, monospace;
+}
+
+h3 {
+    color: #b96646;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h5 {
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/********************BODY*************************/
+
+
+/*********************HEADER***********************/
+header {
+    background-color: #792b2b;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pancake {
+    display: block;
+    padding: 1em;
+    border: 6px solid white;
+    background-color: #792b2b;
+    color: white;
+    max-width: none;
+    text-align: center;
+}
+
+/*slogan/header*/
+#slogan {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+#logo {
+    width: 125px;
+    height: auto;
+}
+
+#mainTitle {
+    margin-left: 45px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+    padding: 2px;
+}
+/*end slogan/header*/
+/*********************HEADER***********************/
+
+
+/**********************NAV***********************/
+header button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #E8CDC2;
+}
+
+nav {
+    font-family: Courier New, Courier, monospace;
+    font-weight: bold;
+    background-image: linear-gradient(#792b2b, #E8CDC2);
+    text-align: center;
+    padding: 0.6rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;   
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #792b2b;
+    color: white;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+/**********************NAV***********************/
+
+
+/************************MAIN*******************/
+main figure.firstimg {
+    max-width: 760px;
+    margin: auto;
+
+}
+
+main figure.firstimg img {
+    width: 100%;
+}
+
+/*Weather summary*/
+.weathersummary {
+    position: relative;
+    margin: 1.25rem auto;
+    max-width: 760px;
+    padding: 1.5px;
+}
+
+#weather_sum {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: 170px;
+    background: #E8CDC2;
+    position: relative;
+    padding: 7px;
+    opacity: .9;
+    top: 25px;
+    left: 50px;
+}
+
+.weathersummary img{
+    width: 100%;
+    margin-bottom: 2px;
+}
+/*end weather summary*/
+
+.titles {
+    font-size: 15px;
+    font-weight: bold;
+    color: #792b2b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*table settings*/
+.five_day_forcast {
+    text-align: center;
+    margin: 1.25rem auto;
+    max-width: 760px;
+    padding: 1.5px;
+
+}
+table, td, th {
+    border: 1px solid;
+    align-items: center;
+}
+.forcast_and_images {
+    background-color: white;
+    color: black;  
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-family: Courier New, Courier, monospace;
+}
+
+.forcast_and_images img {
+    width:50%;    
+}
+
+.days_of_the_week {
+    background-color: #792b2b;
+    color: white;  
+    font-family: Courier New, Courier, monospace;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+th, td {
+    padding: 10px;
+}
+/*end table settings*/
+
+/*article*/
+figure.bradleepic img {
+    height: auto;
+    width: 150px;
+    float: right;
+    margin: 2px;
+}
+
+.article {
+    background-color: #E8CDC2; 
+    color: black;
+    margin: 4.25rem auto;
+    max-width: 760px;
+    padding: 18px 18px 60px 18px;
+}
+/*article*/
+
+/*contact information*/
+
+#contact_box {
+display: flex;
+flex-direction: row;
+    background-color: #b96646;
+    justify-content: center;
+    align-items: center; 
+}
+
+#contact_img {
+    width: 20%;
+    height: auto;
+    margin: 10px;
+}
+
+#contact_title {
+    color: black;
+    font-weight: bold;
+}
+
+.contact_items {
+    color: black;
+    margin: 10px;
+}
+
+.media_img {
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+}/*end social media icons*/
+/************************MAIN*******************/
+
+/*********************FOOTER**********************/
+footer {
+    background-color: #E8CDC2;
+    color: #792b2b;
+    font-weight: bold;
+    font-family: Courier New, Courier, monospace;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 75px;
+}
+/*********************FOOTER**********************/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/******************GALLERY PAGE**********************/
+.gallery_grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    margin: 10px;
+}
+
+.gallery_img img[data-src] {
+    filter: blur(0.5em);
+}
+
+
+
+.gallery_img img{
+    filter: blur(0em);
+    transition: filter 3s;
+    margin: 10px;
+    padding: 2px;
+    max-width: 260px;
+}
+
+.figcap_gallery {
+    display: none;
+}
+
+/******************STORM CENTER PAGE*******************/
+form fieldset {
+    margin: 20px auto 30px auto;
+    border: 1px solid #445b44;
+    border-radius: 10px;
+    max-width: 360px;
+}
+
+form legend {
+    color: #444455;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #792b2b;
+    font-size: 18px;
+}
+
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .755rem;
+    color: #792b2b;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #792b2b;
+}
+/***submit button***/
+form input.submitBtn {
+    border: none;
+    background-color: #792b2b;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 96%;
+    max-width: 360px;
+}
+
+.submit_button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}   
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+#comments_box {
+    margin: 10px;
+}
+
+.storm_severity {
+    display: block;
+    padding-top: 1rem;
+    color: #792b2b;
+    font-size: 18px;
+}
+
+.thanks_comfirmation {
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+/*******************HOME PAGE**********************/
+.website_intro {
+    margin: auto;
+    padding: 80px;
+    font-family: 'Ariel Nova', sans-serif;
+}
+
+info_blocks {
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    max-width: 660px;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+info_blocks img {
+    width: 300px;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+}
+
+info_blocks p {
+    grid-column-start: 1;
+    margin: 2px;
+}
+
+div.town_info {
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    background-color: #b96646;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+
+motto {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #b96646;
+    font-weight: bold;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+name {
+    font-family: courier new, serif;
+    margin: 0px;
+    padding: 0.5px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+
+
+
+
