@@ -173,22 +173,22 @@ main figure.firstimg img {
 
 /*table settings*/
 .five_day_forcast {
+    justify-content: center;
     text-align: center;
-    margin: 1.25rem auto;
-    max-width: 760px;
+    margin: auto;
     padding: 1.5px;
+    
+}
 
+.weather_table {
+    margin: auto;
+    width: 760px;
 }
-table, td, th {
-    border: 1px solid;
-    align-items: center;
-}
-.forcast_and_images {
-    background-color: white;
+
+tbody.forcast_and_images {
+    background-color: #E8CDC2;
     color: black;  
     text-align: center;
-    padding: 10px;
-    margin: 10px;
     font-family: Courier New, Courier, monospace;
 }
 
@@ -196,13 +196,12 @@ table, td, th {
     width:50%;    
 }
 
-.days_of_the_week {
+thead.days_of_the_week {
     background-color: #792b2b;
     color: white;  
     font-family: Courier New, Courier, monospace;
     text-align: center;
     padding: 10px;
-    margin: 10px;
 }
 th, td {
     padding: 10px;
@@ -221,7 +220,7 @@ figure.bradleepic img {
     background-color: #E8CDC2; 
     color: black;
     margin: 4.25rem auto;
-    max-width: 760px;
+    max-width: 720px;
     padding: 18px 18px 60px 18px;
 }
 /*article*/
