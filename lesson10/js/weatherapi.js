@@ -4,14 +4,19 @@ fetch(weatherURL)
     .then((response) => response.json())
     .then((jsObject) => {
         //console.log(jsObject);
-
-        document.getElementById('currently').textContent = jsObject.weather[0].main;
+        document.getElementById('currently').innerHTML = jsObject.weather[0].description;
         document.getElementById('current-temp').textContent = jsObject.main.temp;
         document.getElementById('humidity').textContent = jsObject.main.humidity;
         document.getElementById('wind_speed').textContent = jsObject.wind.speed;
-        document.getElementById('wind_chill').textContent = jsObject.weather.main;
         
-        
+        let t = parseFloat(jsObject.main.temp);
+        let s = parseFloat(jsObject.wind.speed);
+        let wind_chill = "N/A";
+        if (t <= 50 && s >= 3) {
+          let f = (35.74 + (0.6215 * t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275 * (t * (Math.pow(s, 0.16))));
+          wind_chill = Math.round(f);
+        };
+        document.getElementById("wind_chill").innerHTML = wind_chill;
         
     });
 
