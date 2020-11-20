@@ -175,9 +175,7 @@ main figure.firstimg img {
 .five_day_forcast {
     justify-content: center;
     text-align: center;
-    margin: auto;
-    padding: 1.5px;
-    
+    margin: auto;    
 }
 
 .weather_table {
@@ -185,7 +183,7 @@ main figure.firstimg img {
     width: 760px;
 }
 
-tbody.forcast_and_images {
+.forcast_and_images {
     background-color: #E8CDC2;
     color: black;  
     text-align: center;
@@ -201,7 +199,6 @@ thead.days_of_the_week {
     color: white;  
     font-family: Courier New, Courier, monospace;
     text-align: center;
-    padding: 10px;
 }
 th, td {
     padding: 10px;

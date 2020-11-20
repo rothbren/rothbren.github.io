@@ -12,11 +12,7 @@ fetch(weatherURL)
         document.getElementById('wind_chill').textContent = jsObject.weather.main;
         
         
-        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; 
-            const desc = jsObject.weather[0].description; 
-            document.getElementById('imagesrc').textContent = imagesrc; 
-            document.getElementById('icon').setAttribute('src', imagesrc);
-            document.getElementById('icon').setAttribute('alt', desc);
+        
     });
 
 
@@ -33,9 +29,15 @@ fetch(apiURL)
             const d = new Date(forecast[day].dt_txt);
             document.getElementById(`dayofweek${day+1}`).textContent = weekdays[d.getDay()];
             document.getElementById(`forecast${day+1}`).textContent = forecast[day].main.temp;
-            //console.log(forecast);   
+            //console.log(forecast);
+            const imagesrc = 'https://openweathermap.org/img/wn/' + forecast[day].weather[0].icon + '@2x.png';
+      const desc = forecast[day].weather[0].description;
+      document.getElementById(`dayofweek${day+1}`).textContent = weekdays[d.getDay()];
+      document.getElementById(`forecast${day+1}`).textContent = Math.round(forecast[day].main.temp);
+      document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
+      document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
+              
         }
-        
     });
 
  
