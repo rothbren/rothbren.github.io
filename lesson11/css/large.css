@@ -57,7 +57,11 @@
 }
     
 /*******************HOME PAGE***************************/
-div.town_info {
+.website_intro {
+    padding: 80px;
+}
+
+    div.town_info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     }
