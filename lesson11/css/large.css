@@ -68,8 +68,9 @@ div.town_info {
 }
     
  info_blocks:nth-child(even) img{
-    display: block;
-    grid-column: 1;
+    grid-column: 0;
+     margin: 0px;
+     padding: 0px;
 }
 
 info_blocks:nth-child(even) p{
@@ -78,11 +79,21 @@ info_blocks:nth-child(even) p{
 
 info_blocks:nth-child(even) h2{
    grid-column: 1;
+    grid-row: 1;
+}
+    
+info_blocks:nth-child(odd) h2{
+   grid-column: 1;
+    grid-row: 1;
 }
 
 info_blocks:nth-child(even) motto{
-  grid-column: 1;
-  
-
+  grid-column: 1;    
+}
+    
+    motto {
+        margin-top: 250px;
+        
+    }    
 }
     
