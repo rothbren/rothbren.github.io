@@ -181,6 +181,12 @@ main figure.firstimg img {
     padding: 5px;
     font-size: 20px;
 }
+
+
+.eventsTitle {
+    color: white;
+    padding: 5px;
+}
 /********EVENTS BOX************/
 
 .titles {
