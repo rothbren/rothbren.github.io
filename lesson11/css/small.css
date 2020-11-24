@@ -251,10 +251,15 @@ flex-direction: row;
     align-items: center; 
 }
 
+#contact_box a{
+    text-decoration: none; 
+    }
+
 #contact_img {
     width: 20%;
     height: auto;
     margin: 10px;
+    text-decoration: none;
 }
 
 #contact_title {

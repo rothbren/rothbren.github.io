@@ -21,7 +21,7 @@
     </div>
     <header>
 
-        <img id="logo" src="images/invertlogo2.jpg" alt="The Temperature Tracker logo">
+        <a href="https://rothbren.github.io/lesson9/index.html"><img id="logo" src="images/invertlogo2.jpg" alt="The Temperature Tracker logo"></a> 
 
         <section id="mainTitle">
             <h1 id="title">Temperature Tracker</h1>
@@ -34,8 +34,8 @@
         <ul id="primaryNav" class="hide">
             <li><a href="https://rothbren.github.io/lesson9/index.html">Home</a></li>
             <li class='active'><a href="https://rothbren.github.io/lesson10/preston10.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="https://rothbren.github.io/lesson11/sodaSprings.html">Soda Springs</a></li>
+            <li><a href="https://rothbren.github.io/lesson11/fishHaven.html">Fish Haven</a></li>
             <li><a href="https://rothbren.github.io/lesson8/stormcenter.html">Storm Center</a></li>
             <li><a href="https://rothbren.github.io/lesson7/gallery-7.html">Gallery</a></li>
         </ul>
@@ -57,17 +57,13 @@
                 <p>Temperature: <span id="current-temp"></span>&deg;F</p>
                 <p>Humidity: <span id="humidity"></span>%</p>
                 <p>Wind Speed: <span id="wind_speed"></span>mph</p>
-                <p>Wind Chill: <span id="wind_chill"></span>&#8457;</p>
+                <p>Wind Chill: <span id="wind_chill"></span>&deg;F</p>
             </div>
         </div>
-
-        <div class="current_events">
-            <p id="events_title">Events this Week:</p>
-            <span id=""></span>
-        </div>
-
+        
+        
         <div class="five_day_forcast">
-            <h2>5 Day Forcast</h2>
+           <h2>5 Day Forcast</h2>
             <table class="weather_table">
                 <thead class="days_of_the_week"> 
                     <tr>
@@ -78,30 +74,16 @@
                         <th><span id="dayofweek5"></span></th>
                     </tr>
                 </thead>
-                <tbody>
-                     <tr class="forcast_and_images">
-                    <td>
-                        <span id="forecast1"></span>&deg;F<br>
-                        <img src="" alt="" id="icon1">
-                    </td>
-                    <td>
-                        <span id="forecast2"></span>&deg;F<br>
-                        <img src="" alt="" id="icon2">
-                    </td>
-                    <td>
-                        <span id="forecast3"></span>&deg;F<br>
-                        <img src="" alt="" id="icon3">
-                    </td>
-                    <td>
-                        <span id="forecast4"></span>&deg;F<br>
-                        <img src="" alt="" id="icon4">
-                    </td>
-                    <td>
-                        <span id="forecast5"></span>&deg;F<br>
-                        <img src="" alt="" id="icon5">
-                    </td>
-                </tr>
-                </tbody>
+                
+                    <tr class="forcast_and_images">
+                   
+                    <td><span id="forecast1"></span>&#8457; <br> <img id="icon1" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true" alt="unknown"/></td>
+                    <td><span id="forecast2"></span>&#8457; <br> <img id="icon2" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true" alt="unknown"></td>
+                    <td><span id="forecast3"></span>&#8457; <br> <img id="icon3" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true" alt="unknown"></td>
+                    <td><span id="forecast4"></span>&#8457; <br> <img id="icon4" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true" alt="unknown"></td>
+                    <td><span id="forecast5"></span>&#8457; <br> <img id="icon5" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true" alt="unknown"></td>
+                  </tr>
+                  
                
             </table>
         </div>
@@ -159,6 +141,7 @@
             <span id="currentdate"> </span></p>
     </footer>
     <script src="js/weatherapi.js"></script>
+    <script src="js/townInfo.js"></script>
     <script src="js/java.js"></script>
    <!--<script src="js/windchill.js"></script>--> 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

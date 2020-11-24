@@ -35,7 +35,10 @@
     width: 170px;;
     }
 
-    
+    .weather_table {
+        margin: auto;
+        width: 760px;
+    }
 
     
 /******************GALLERY PAGE**********************/
