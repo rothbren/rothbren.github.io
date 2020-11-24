@@ -163,20 +163,23 @@ main figure.firstimg img {
 /*end weather summary*/
 
 /********EVENTS BOX************/
-.current_events {
+#events {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    width: 100%;
+    text-align: center;
     background: #b96646;
     position: relative;
-    padding: 7px;
-    margin-bottom: 20px;
+    color: white;
+    padding: 10px;
     opacity: .9;
+    width: 760px;
+    margin: auto;
 }
 
-#events_title {
+#eventsTitle {
+    font-family: courier new, courier, monospace;
     color: white;
     padding: 5px;
+    font-size: 20px;
 }
 /********EVENTS BOX************/
 

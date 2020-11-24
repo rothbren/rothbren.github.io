@@ -18,14 +18,14 @@ fetch(townURL)
                 let yearFounded = document.createElement('p');
                 let currentPopulation = document.createElement('p');
                 let averageRainfall = document.createElement('p');
-                let events = document.createElement('p');
+                //let events = document.createElement('p');
 
                 name.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
                 yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 currentPopulation.textContent = 'Current Population: ' + towns[i].currentPopulation;
                 averageRainfall.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
-                events.textContent = 'Events: ' + towns[i].events;
+               // events.textContent = 'Events: ' + towns[i].events;
                 photo.setAttribute('src','images/'+ towns[i].photo);
                 photo.setAttribute("height", "205");
                 photo.setAttribute('alt', name.textContent + '-' + towns[i].order);
@@ -35,7 +35,7 @@ fetch(townURL)
                 town_info.appendChild(yearFounded);
                 town_info.appendChild(currentPopulation);
                 town_info.appendChild(averageRainfall);
-                town_info.appendChild(events);
+               // town_info.appendChild(events);
                 town_info.appendChild(photo);
 
                 document.querySelector('div.town_info').appendChild(town_info);
