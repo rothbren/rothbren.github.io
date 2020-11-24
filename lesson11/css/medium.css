@@ -12,17 +12,27 @@
         width: 135px;
     }
       
-    .weather_summary {
+   .weather_summary {
     position: absolute;
     bottom: 250px;
     left: 50px;
+     
     }
     
+    /********EVENTS BOX************/
+.current_events {
+    margin: auto;
+    margin-bottom: 30px;
+    position: relative;
+    width: 740px;
+}
+/********EVENTS BOX************/
     
     #weather_sum {
     position: absolute;
     top: 80px;
 	right: 500px;
+    width: 170px;;
     }
 
     

@@ -149,13 +149,11 @@ main figure.firstimg img {
 #weather_sum {
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
-    width: 170px;
+    width: 100%;
     background: #E8CDC2;
     position: relative;
     padding: 7px;
     opacity: .9;
-    top: 25px;
-    left: 50px;
 }
 
 .weathersummary img{
@@ -163,6 +161,24 @@ main figure.firstimg img {
     margin-bottom: 2px;
 }
 /*end weather summary*/
+
+/********EVENTS BOX************/
+.current_events {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: 100%;
+    background: #b96646;
+    position: relative;
+    padding: 7px;
+    margin-bottom: 20px;
+    opacity: .9;
+}
+
+#events_title {
+    color: white;
+    padding: 5px;
+}
+/********EVENTS BOX************/
 
 .titles {
     font-size: 15px;
@@ -172,17 +188,17 @@ main figure.firstimg img {
 }
 
 /*table settings*/
+
 .five_day_forcast {
     justify-content: center;
     text-align: center;
     margin: auto;
-    padding: 1.5px;
-    
+    padding: 1.5px;  
 }
 
 .weather_table {
     margin: auto;
-    width: 760px;
+    width: 100%;
 }
 
 tbody.forcast_and_images {
@@ -270,8 +286,8 @@ footer {
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     height: 75px;
 }
 /*********************FOOTER**********************/
