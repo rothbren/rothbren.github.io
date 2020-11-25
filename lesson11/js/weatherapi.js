@@ -1,15 +1,14 @@
-
 var currentURL = window.location.href;
-        var currentId = "5604473";
-        if (currentURL.indexOf("preston.html") > 0) {
-            currentId = "5604473";
-        } else if (currentId.indexOf("sodaSprings.html") > 0) {
-            currentId = "5607916"; 
-        } else if (currentId.indexOf("fishHaven.html") > 0) {
-            currentId = "lat=42.0380399&lon=-111.4048681";
-        }
+var currentId = "5604473";
+if (currentURL.indexOf("preston.html") > 0) {
+    currentId = "5604473";
+} else if (currentId.indexOf("sodaSprings.html") > 0) {
+    currentId = "5607916";
+} else if (currentId.indexOf("fishHaven.html") > 0) {
+    currentId = "lat=42.0380399&lon=-111.4048681";
+}
 
-/***LINKS TO THE WEATHER_TOWN INFORMATION JSON FILES***/        
+/***LINKS TO THE WEATHER_TOWN INFORMATION JSON FILES***/
 const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=" + currentId + "&units=imperial&appid=f9208b18eeb79b0482b30e396e20dd9e";
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + currentId + "&units=imperial&appid=f9208b18eeb79b0482b30e396e20dd9e";
 const townInfoURL = "https://byui-cit230.github.io/weather/data/towndata.json";
@@ -67,7 +66,7 @@ fetch(townInfoURL)
     })
     .then(function (jsonObject) {
         //console.table(jsonObject);
-       
+
 
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++) {
