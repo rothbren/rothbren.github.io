@@ -1,5 +1,5 @@
 var currentURL = window.location.href;
-var currentId = "5604473";
+let currentId = "5604473";
 if (currentURL.indexOf("preston.html") > 0) {
     currentId = "5604473";
 } else if (currentId.indexOf("sodaSprings.html") > 0) {
@@ -10,11 +10,9 @@ if (currentURL.indexOf("preston.html") > 0) {
 
 /***LINKS TO THE WEATHER_TOWN INFORMATION JSON FILES***/
 const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=" + currentId + "&units=imperial&appid=f9208b18eeb79b0482b30e396e20dd9e";
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + currentId + "&units=imperial&appid=f9208b18eeb79b0482b30e396e20dd9e";
+const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + currentId + "&units=imperial&appid=f9208b18eeb79b0482b30e396e20dd9e";
 const townInfoURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
-
-/*****CURRENT WEATHER******/
 fetch(weatherURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -35,11 +33,9 @@ fetch(weatherURL)
 
     });
 
-
 fetch(apiURL)
     .then(response => response.json())
     .then(jsObject => {
-
 
         const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         const forecast = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
@@ -48,7 +44,7 @@ fetch(apiURL)
             const d = new Date(forecast[day].dt_txt);
             document.getElementById(`dayofweek${day+1}`).textContent = weekdays[d.getDay()];
             document.getElementById(`forecast${day+1}`).textContent = forecast[day].main.temp;
-            console.log(forecast);
+            //console.log(forecast);
             const imagesrc = 'https://openweathermap.org/img/wn/' + forecast[day].weather[0].icon + '@2x.png';
             const desc = forecast[day].weather[0].description;
             document.getElementById(`dayofweek${day+1}`).textContent = weekdays[d.getDay()];
