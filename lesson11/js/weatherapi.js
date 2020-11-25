@@ -35,7 +35,7 @@ fetch(weatherURL)
 
     });
 
-/********FIVE DAY FORECAST*********/
+
 fetch(apiURL)
     .then(response => response.json())
     .then(jsObject => {
@@ -58,6 +58,7 @@ fetch(apiURL)
 
         }
     });
+
 
 /*****CURRENT EVENTS******/
 fetch(townInfoURL)
