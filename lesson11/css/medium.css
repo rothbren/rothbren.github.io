@@ -12,26 +12,26 @@
         width: 135px;
     }
       
-   .weather_summary {
-    position: absolute;
-    bottom: 250px;
-    left: 50px;
-     
-    }
+    #weather_sum {
+        position: absolute;
+        top:21px;
+        left: 20px;
+        width: 170px;;
+        }
     
     /********EVENTS BOX************/
-.current_events {
+#events {
     margin: auto;
     margin-bottom: 30px;
     position: relative;
-    width: 740px;
+    width: 80%;
 }
 /********EVENTS BOX************/
     
     #weather_sum {
     position: absolute;
-    top: 80px;
-	right: 500px;
+    top:21px;
+	left: 20px;
     width: 170px;;
     }
 
@@ -44,6 +44,7 @@
 /******************GALLERY PAGE**********************/
 .gallery_grid {
     grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 
 .figcap_gallery {
