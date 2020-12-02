@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Home page for a weather website in Prestin created by Brenyn Rothwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>Home Page</title>
+
+    <link rel="small icon" href="favicon.ico">
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <a href="https://rothbren.github.io/finalLesson/home.html"><img id="logo" src="images/scoots_logo.jpg"
+                alt="Website Logo"></a>
+
+        <section id="mainTitle">
+            <h1>Scoots</h1>
+            <div id="slogan">let's go on an adventure</div>
+        </section>
+        <button class="menu_button" onclick="toggleMenu()"> &#9776; </button>
+
+    </header>
+
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li class='active'><a href="https://rothbren.github.io/finalLesson/home.html">Home</a></li>
+            <li><a href="https://rothbren.github.io/finalLesson/rental.html">Rentals</a></li>
+            <li><a href="https://rothbren.github.io/finalLesson/reservation.html">Reservations</a></li>
+            <li><a href="https://rothbren.github.io/finalLesson/tour.html">Tours</a></li>
+            <li><a href="https://rothbren.github.io/finalLesson/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <img class="home_banner" src="images/home_banner.jpg">
+        <div class="homePage_grid">
+            <div id="verticalimg"><img class="scoots_homeImage_vertical" src="images/scooter1080.jpg"
+                    alt="image promoting scoots"></div>
+
+            <div id="website_intro">
+                <h2>Welcome</h2>
+                <p>Are you looking to explore the beautiful lands of Cozumel?
+                    Or looking to try something new? If you said yes to both those
+                    questions, we have the perfect thing for you! Welcome to Scoots,
+                    the scooter rental company here to help you find your perfect
+                    adventure. We offer a variety of tours and sizes of scooters for
+                    your convience. It doesn't matter if you are a party of 20 or a party of
+                    one, come join us and let's go on an adventure.
+                </p>
+
+                <button class="rentalButton">Plan My Adventure</button>
+            </div>
+
+            <div class="rentalSum">
+                <h3>Rentals</h3>
+                <p>You don't need to buy or bring your own scooter, we
+                    provide them for you! We offer a variety of prices
+                    and rental options. From Honda Moter Scooters to
+                    ATV Side-by-Sides, we will find the perfect scooter
+                    for you. Be sure to check out our rentals
+                    page before booking a reservation.
+                </p>
+                <button class="rentalButton"><a href="finalLesson/rental.html">Rentals</a></button>
+            </div>
+
+            <div class="weathersummary">
+                <div id="weather_sum">
+                    <h2>Weather:</h2>
+                    <p>Currently: <span id="currently"></span></p>
+                    <p>Temperature: <span id="current-temp"></span>&deg;F</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind Speed: <span id="wind_speed"></span>mph</p>
+                    <p>Wind Chill: <span id="wind_chill"></span>&deg;F</p>
+                </div>
+            </div>
+            <div class="three_day_forcast">
+                <h3>3 Day Forcast</h3>
+                <table class="weather_table">
+                    <thead class="days_of_the_week">
+                        <tr>
+                            <th><span id="dayofweek1"></span></th>
+                            <th><span id="dayofweek2"></span></th>
+                            <th><span id="dayofweek3"></span></th>
+                        </tr>
+                    </thead>
+
+                    <tr class="forcast_and_images">
+
+                        <td><span id="forecast1"></span>&#8457; <br> <img id="icon1"
+                                src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                                alt="unknown" /></td>
+                        <td><span id="forecast2"></span>&#8457; <br> <img id="icon2"
+                                src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                                alt="unknown"></td>
+                        <td><span id="forecast3"></span>&#8457; <br> <img id="icon3"
+                                src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                                alt="unknown"></td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+        </div>
+
+        <div class="contact_info">
+            <h3>Contact Us:</h3>
+            <p>000-000-0000</p>
+            <p>scoots@email.com</p>
+            <p>0000 Cozomel, Mexico</p>
+            <div id="socialMediaLinks">
+                <a href="https://www.facebook.com/">
+                    <img class="media_img" alt="facbook icon"
+                        src="images/iconfinder_Facebook_social_media_logo_1964400.png">
+                </a>
+                <a href="https://twitter.com/?lang=en">
+                    <img class="media_img" alt="twitter icon" src="images/iconfinder_Circled_Twitter_svg_5279123.png">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img class="media_img" alt="youtube icon"
+                        src="images/iconfinder_YouTube_Play_social_media_logo_1964418.png">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img class="media_img" alt="instagram icon"
+                        src="images/iconfinder_Circled_Instagram_svg_5279112.png">
+                </a></div>
+
+            </p>
+        </div>
+</body>
+
+</main>
+
+<footer>
+    <p id="weather_credit"><a href="https://openweathermap.org/">weathermap.org</a></p>
+    <p id='copyRight'> &#169; 2020 Scoots | Brenyn Rothwell <br>
+        <span id="currentdate"> </span></p>
+</footer>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Zilla+Slab:wght@500&display=swap');
+</style>
+<script src="js/java.js"></script>
+<script src="js/weather.js"></script>
+</body>
+
+</html>

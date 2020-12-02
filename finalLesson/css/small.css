@@ -1,0 +1,262 @@
+/********************BODY*************************/
+body {
+    font-size: 16px;
+    font-family: "Zilla Slab", serif;
+}
+
+main {
+   max-width: 960px;
+   margin: auto; 
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+    color: #112838;
+    margin: 0;
+}
+
+h2 {
+    color: #3983B8;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    font-kerning: 2px;
+}
+
+h3 {
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    font-kerning: 2px;
+    
+}
+
+h4 {
+    color: #112838;
+    font-family: "zilla slab", serif;
+}
+
+h5 {
+    color: #112838;
+    font-family: "zilla slab", serif;
+}
+
+/********************BODY*************************/
+
+/*********************HEADER***********************/
+header {
+    background-color: #4DB0F7;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/*slogan/header*/
+#slogan {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+#logo {
+    width: 125px;
+    height: auto;
+}
+
+#mainTitle {
+    margin-left: 45px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+    padding: 2px;
+}
+
+/*end slogan/header*/
+/*********************HEADER***********************/
+
+
+/**********************NAV***********************/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #112838;
+}
+
+nav {
+    font-family: "zilla slab", serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow: hidden;
+    background-color:  #4DB0F7;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #4DB0F7;
+    color: #112838;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #255578;
+    color: white;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #112838;
+}
+
+
+/**********************NAV***********************/
+
+/************************MAIN*******************/
+.home_banner {
+    max-width: 960px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.homePage_grid
+ .scoots_homeImage_vertical {
+    display: none;
+}
+
+#website_intro {
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+    position: relative;
+    color: white;
+    background: #112838;
+}
+
+.rentalButton {
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.rentalSum {
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+    position: relative;
+    color: white;
+    background: #3983B8;
+}
+
+.weathersummary {
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+    position: relative;
+    color: white;
+    background: #112838;
+}
+
+#weather_sum {
+    font-family: "Zilla Slab", serif;
+    color: white;
+    background: #112838;
+    text-align: left;
+    position: relative;
+    padding: 2%;
+}
+
+/*table settings*/
+.three_day_forcast {
+    width: 90%;
+    margin: 10px;
+}
+
+.weather_table {
+    margin: auto;
+    width: 100%;
+}
+
+.forcast_and_images {
+    background-color: #4DB0F7;
+    color: #112838;  
+    text-align: center;
+    font-family:  "zilla slab", serif;
+}
+
+.forcast_and_images img {
+    width:50%;    
+}
+
+thead.days_of_the_week {
+    background-color: #112838;
+    color: white;  
+    font-family: "zilla slab", serif; 
+    text-align: center;
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px;
+}
+/*end table settings*/
+
+.contact_info {
+    margin: auto;
+    padding: 20px;
+    font-family: "zilla slab", serif;
+    text-align: center;
+    text-align: left;
+    overflow: hidden;
+    background-color:  #4DB0F7;
+}
+
+#socialMediaLinks img {
+    max-width: 20px;
+    text-decoration: none;
+}
+
+#socialMediaLinks a {
+    text-decoration: none;
+}
+/************************MAIN*******************/
+
+/*********************FOOTER**********************/
+footer {
+    background-color: #112838;
+    color: white;
+    font-weight: bold;
+    font-family:  "zilla slab", serif;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 75px;
+}
+/*********************FOOTER**********************/

@@ -1,0 +1,35 @@
+@media only screen and (min-width: 64rem) {
+    #logo {
+        width: 200px;
+    }
+    
+    #slogan {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 80px;
+    }
+
+    header button {
+        display: none;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        padding: 0.6rem 1rem;
+    }
+
+    nav ul {
+        margin-left: 2%;
+        font-size: 42px;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+    
+}
