@@ -6,4 +6,109 @@
     #logo {
         width: 135px;
     }
+    /************************MAIN*******************/
+.home_banner {
+    max-width: 960px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.homePage_grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;    
+}
+
+#verticalimg { 
+    display: block;
+    position: relative;
+    margin: 0px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+ .scoots_homeImage_vertical {
+    height: auto;
+    max-width: 500px;
+    position: relative;
+}
+
+#website_intro {
+    width: 100%;
+    margin: auto;
+    padding-left: 2%;
+    position: relative;
+    color: white;
+    background: #112838;
+    height: 280px;
+}
+
+.rentalSum {
+    width: 100%;
+    margin: auto;
+    padding-left: 2%;
+    position: relative;
+    color: white;
+    background: #3983B8;
+    height: 280px;
+}
+
+.weathersummary {
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    height: 280px;
+}
+
+#weather_sum {
+    font-family: "Zilla Slab", serif;
+    color: white;
+    background: #112838;
+    text-align: left;
+    position: relative;
+    padding: 2%;
+}
+
+/*table settings*/
+.three_day_forcast {
+   width: 100%;
+    margin: 0px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    position: relative;
+}
+
+.weather_table {
+    margin: auto;
+    width: 100%;
+}
+
+.forcast_and_images {
+    background-color: #4DB0F7;
+    color: #112838;  
+    text-align: center;
+    font-family: Courier New, Courier, monospace;
+}
+
+.forcast_and_images img {
+    width:50%;    
+}
+
+thead.days_of_the_week {
+    background-color: #112838;
+    color: white;  
+    font-family: Courier New, Courier, monospace;
+    text-align: center;
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px;
+}
 }
