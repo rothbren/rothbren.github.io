@@ -7,27 +7,29 @@
         width: 135px;
     }
     /************************MAIN*******************/
-.home_banner {
-    max-width: 960px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .homePage_grid {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 10px;    
+    margin: 10%;
 }
 
+.home_banner {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+        grid-row-start:1;
+    margin: auto;
+}
+    
 #verticalimg { 
     display: block;
     position: relative;
-    margin: 0px;
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 2;
+    margin: auto;
 }
 
  .scoots_homeImage_vertical {
@@ -37,32 +39,32 @@
 }
 
 #website_intro {
-    width: 100%;
     margin: auto;
-    padding-left: 2%;
     position: relative;
     color: white;
     background: #112838;
-    height: 280px;
+    width: 70%;
+    grid-column-start: 2;
+    grid-row-start: 2;
 }
 
 .rentalSum {
-    width: 100%;
     margin: auto;
-    padding-left: 2%;
     position: relative;
     color: white;
     background: #3983B8;
-    height: 280px;
+    padding-left: 20px;
+    width: 70%;
+    grid-column-start: 2;
+    grid-row-start: 3;
 }
 
 .weathersummary {
     position: relative;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    height: 280px;
+    grid-row-start: 4;
+    width: 70%;
 }
 
 #weather_sum {
@@ -79,7 +81,7 @@
    width: 100%;
     margin: 0px;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 4;
     position: relative;
 }

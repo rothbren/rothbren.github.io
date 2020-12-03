@@ -1,0 +1,105 @@
+{
+    "rentals": [
+        {
+            "name": "Honda Metro Scooter",
+            "maxPersons": "1",
+            "reservationprice": 
+                {
+                    "halfP": "$20",
+                    "fullP": "$30"
+                },
+            "walkinprice":
+                {
+                    "whalfP": "$25",
+                    "wfullP": "$35"
+                },
+            
+            "other": "49cc"
+        },
+
+        {
+            "name": "Honda Dio Scooter",
+            "maxPersons": "2",
+            "reservationprice": 
+                {
+                    "halfP": "$30",
+                    "fullP": "#40"
+                },
+            "walkinprice":
+                {
+                    "whalfP": "$35",
+                    "wfullP": "$45"
+                },
+            
+            "other": "110cc"
+        },
+
+        {
+            "name": "Honda PCSX 150 Scooter",
+            "maxPersons": "2",
+            "reservationprice": 
+                {
+                    "halfP": "$40",
+                    "fullP": "$50"
+                },
+            "walkinprice":
+                {
+                    "whalfP": "$45",
+                    "wfullP": "$55"
+                },
+            
+            "other": "149cc"
+        },
+
+        {
+            "name": "Honda Pioneer ATV",
+            "maxPersons": "4",
+            "reservationprice": 
+                {
+                    "halfP": "$50",
+                    "fullP": "$70"
+                },
+            "walkinprice":
+                {
+                    "whalfP": "$60",
+                    "wfullP": "$80"
+                },
+            
+            "other": ""
+        },
+
+        {
+            "name": "4-door Jeep Wrangler",
+            "maxPersons": "5",
+            "reservationprice": 
+                {
+                    "halfP": "$70",
+                    "fullP": "$100"
+                },
+            "walkinprice":
+                {
+                    "whalfP": "$85",
+                    "wfullP": "$125"
+                },
+            
+            "other": "manual with A/C"
+        },
+
+        {
+            "name": "2-door Jeep Wrangler",
+            "maxPersons": "4",
+            "reservationprice": 
+                {
+                    "halfP": "$60",
+                    "fullP": "$85"
+                },
+            "walkinprice":
+                {
+                    "whalfP": "$70",
+                    "wfullP": "$90"
+                },
+            
+            "other": "manual and open air"
+        }
+    ]
+}

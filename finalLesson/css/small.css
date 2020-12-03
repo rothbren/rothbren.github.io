@@ -5,7 +5,7 @@ body {
 }
 
 main {
-   max-width: 960px;
+   /*! max-width: 960px; */
    margin: auto; 
 }
 
@@ -137,17 +137,20 @@ nav ul li.active a {
 
 /************************MAIN*******************/
 .home_banner {
-    max-width: 960px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 100%;
 }
 
+#verticalimg {
+    display: none;
+}
+.scoots_homeImage_vertical{
+    width: 100%;
+}
 
 #website_intro {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding: 2%;
-    position: relative;
+    padding: 3%;
     color: white;
     background: #112838;
 }
@@ -155,23 +158,25 @@ nav ul li.active a {
 .rentalButton {
     padding: 5px;
     margin: 10px;
-    text-decoration: none;
+    text-decoration: none !important;
     color: black;
 }
 
 .rentalSum {
-    width: 90%;
-    margin: auto;
-    padding: 2%;
-    position: relative;
+    margin-bottom: 10px;
+    padding: 20px;
     color: white;
     background: #3983B8;
 }
 
+.paragraph {
+    margin: 10px;
+    width: 80%;
+}
+
 .weathersummary {
-    width: 90%;
     margin: auto;
-    padding: 2%;
+    padding: 20px;
     position: relative;
     color: white;
     background: #112838;
@@ -257,3 +262,108 @@ footer {
     height: 75px;
 }
 /*********************FOOTER**********************/
+
+/******************Reservations PAGE*******************/
+#rentalInfo {
+    margin-left: 50px;
+}
+
+form fieldset {
+    margin: auto;
+    border: 5px solid #112838;
+    border-radius: 0px;
+    max-width: 760px;
+}
+
+form legend {
+    color: #112838;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 20px;
+    color: #3983B8;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .755rem;
+    color: #3983B8;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    margin-left: 50px;
+    padding: .75rem 0;
+    color: #3983B8;
+}
+/***submit button***/
+form input.submitBtn {
+    border: none;
+    background-color: #3983B8;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 96%;
+    max-width: 360px;
+}
+
+.submit_button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}   
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+#comments_box {
+    margin: 10px;
+}
+
+.thanks_comfirmation {
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+}
+/******************STORM CENTER PAGE*******************/
+
+/*************CONTACT PAGE***************************/
+#contactUs {
+    margin: auto;
+    padding: 10px;
+    font-family: "Zilla Slab", serif;
+    color: #3983B8;
+}
+
+#googlemaps {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.googleMap {
+    padding: 4px;
+    margin: auto;
+    width: 400px;
+    height: 250px;
+}
+/*************CONTACT PAGE***************************/
