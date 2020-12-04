@@ -1,6 +1,6 @@
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
-console.log(toggleMenu());
+//console.log(toggleMenu());
 }
 
 const daynames = [
@@ -56,8 +56,11 @@ fetch(rentalURL)
     .then(function (response){
         return response.json();
     })
-    .then(function (jasonObject){
-        const rental = jasonObject["rentals"];
+    .then(function (jsonObject){
+        console.log(jsonObject); 
+        
+        const rental = jsonObject["rentals"];
+        
 
         for(let i = 0; i<rental.length; i++){
             let rentalInfo = document.createElement('info_blocks')
