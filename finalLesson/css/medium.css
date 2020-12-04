@@ -10,32 +10,25 @@
 .homePage_grid {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     margin: 10%;
 }
 
-.home_banner {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    position: relative;
-        grid-row-start:1;
-    margin: auto;
-}
-    
+   
 #verticalimg { 
     display: block;
-    position: relative;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    /*! position: relative; */
+    grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin: auto;
+    margin: 10px;
 }
 
  .scoots_homeImage_vertical {
     height: auto;
     max-width: 500px;
     position: relative;
+     margin: auto; 
 }
 
 #website_intro {
@@ -43,7 +36,6 @@
     position: relative;
     color: white;
     background: #112838;
-    width: 70%;
     grid-column-start: 2;
     grid-row-start: 2;
 }
@@ -54,17 +46,14 @@
     color: white;
     background: #3983B8;
     padding-left: 20px;
-    width: 70%;
     grid-column-start: 2;
     grid-row-start: 3;
 }
 
 .weathersummary {
-    position: relative;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    width: 70%;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 100%;
 }
 
 #weather_sum {
@@ -72,8 +61,6 @@
     color: white;
     background: #112838;
     text-align: left;
-    position: relative;
-    padding: 2%;
 }
 
 /*table settings*/
@@ -81,8 +68,8 @@
    width: 100%;
     margin: 0px;
     grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
+    grid-column-end: 3;
+    grid-row-start: 3;
     position: relative;
 }
 

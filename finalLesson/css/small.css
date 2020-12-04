@@ -9,6 +9,10 @@ main {
    margin: auto; 
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-size: 30px;
     font-family: 'Anton', sans-serif;
@@ -22,6 +26,7 @@ h2 {
     font-size: 30px;
     font-kerning: 2px;
     margin: auto;
+    padding: 20px;
 }
 
 h3 {
@@ -29,7 +34,7 @@ h3 {
     font-family: 'Anton', sans-serif;
     font-size: 30px;
     font-kerning: 2px;
-    
+    padding: 5px;
 }
 
 h4 {
@@ -137,6 +142,7 @@ nav ul li.active a {
 /**********************NAV***********************/
 
 /************************MAIN*******************/
+
 .home_banner {
     width: 100%;
 }
@@ -151,9 +157,10 @@ nav ul li.active a {
 #website_intro {
     width: 100%;
     margin: auto;
-    padding: 3%;
     color: white;
     background: #112838;
+    padding-top: 20px;
+     padding-bottom: 20px;
 }
 
 .rentalButton {
@@ -165,9 +172,9 @@ nav ul li.active a {
 
 .rentalSum {
     margin-bottom: 10px;
-    padding: 20px;
     color: white;
     background: #3983B8;
+    padding: 20px;
 }
 
 .paragraph {
@@ -177,7 +184,6 @@ nav ul li.active a {
 
 .weathersummary {
     margin: auto;
-    padding: 20px;
     position: relative;
     color: white;
     background: #112838;
@@ -368,3 +374,28 @@ form label.top input:required:valid {
     height: 250px;
 }
 /*************CONTACT PAGE***************************/
+.tours_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+div.gallery {
+    grid-column-start: 1;
+  grid-row-start: 1;
+  width: 180px;
+    margin: auto;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.paragraph1 {
+    grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.paragraph1 h2{
+    grid-column-start: 2;
+  grid-row-start: 1;
+}

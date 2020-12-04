@@ -48,21 +48,19 @@ data = data + 'Rental Type: ' + params.get('rentalType') + '<br/>';
 data = data + 'Special Instructions: ' + params.get('comments_box') + '<br/><br/>';
 data = data + 'Drop Off Instructions: ' + params.get('comments_box') + '<br/><br/>';
 data = data + 'Additional Information and Comments: ' + params.get('comments_box') + '<br/><br/>';
-document.querySelector(".reservationInfo").innerHTML = data;
 
 /************RENTALS***********/
-const rentalURL = "data/rental.json";
+const rentalURL = "https://rothbren.github.io/finalLesson/data/rental.json";
 
 fetch(rentalURL)
     .then(function (response){
         return response.json();
     })
     .then(function (jasonObject){
-        console.log(rental);
-
         const rental = jasonObject["rentals"];
 
         for(let i = 0; i<rental.length; i++){
+            let rentalInfo = document.createElement('info_blocks')
             let name = document.createElement('name');
             let maxpersons= document.createElement('maxPersons');
             let price= document.createElement('reservationprice');
