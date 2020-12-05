@@ -9,10 +9,6 @@ main {
    margin: auto; 
 }
 
-a {
-    text-decoration: none;
-}
-
 h1 {
     font-size: 30px;
     font-family: 'Anton', sans-serif;
@@ -184,6 +180,7 @@ nav ul li.active a {
 
 .weathersummary {
     margin: auto;
+    padding: 20px;
     position: relative;
     color: white;
     background: #112838;
@@ -370,32 +367,7 @@ form label.top input:required:valid {
 .googleMap {
     padding: 4px;
     margin: auto;
-    width: 400px;
-    height: 250px;
+    width: 50%;
+    height: auto;
 }
 /*************CONTACT PAGE***************************/
-.tours_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-div.gallery {
-    grid-column-start: 1;
-  grid-row-start: 1;
-  width: 180px;
-    margin: auto;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-.paragraph1 {
-    grid-column-start: 2;
-  grid-row-start: 1;
-}
-
-.paragraph1 h2{
-    grid-column-start: 2;
-  grid-row-start: 1;
-}

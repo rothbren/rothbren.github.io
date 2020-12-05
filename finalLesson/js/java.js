@@ -64,28 +64,28 @@ fetch(rentalURL)
 
         for(let i = 0; i<rental.length; i++){
             let rentalInfo = document.createElement('info_blocks')
-            let name = document.createElement('name');
-            let maxpersons= document.createElement('maxPersons');
-            let price= document.createElement('reservationprice');
-            let halfP= document.createElement('halfP');
-            let fullP= document.createElement('fullP');
-            let walkinprice= document.createElement('walkinprice');
-            let other= document.createElement('other');
+            let name = document.createElement('h3');
+            let maxpersons= document.createElement('p');
+            let halfP= document.createElement('p');
+            let fullP= document.createElement('p');
+            let whalfP= document.createElement('p');
+            let wfullP= document.createElement('p');
+            let other= document.createElement('p');
 
             name.textContent = rental[i].name;
-            maxpersons.textContent = "Max Number of People: " + rental[i].maxpersons;
-            price.textContent = "Price: " + rental[i].price;
-            halfP.textContent = "Half Day Price: "+ rental[i].halfP;
-            fullP.textContent = "Full Day Price: "+ rental[i].fullP;
-            walkinprice.textContent = "Price without Reservation: "+ rental[i].walkinprice;
+            maxpersons.textContent = "Max Number of People: " + rental[i].maxPersons;
+            halfP.textContent = "Half Day Price: "+ rental[i].reservationprice.halfP;
+            fullP.textContent = "Full Day Price: "+ rental[i].reservationprice.fullP;
+            whalfP.textContent = "Price without Reservation- Half Day: "+ rental[i].walkinprice.whalfP;
+            wfullP.textContent = "Price without Reservation- Full Day: "+ rental[i].walkinprice.wfullP;
             other.textContent = rental[i].other;
 
             rentalInfo.appendChild(name);
             rentalInfo.appendChild(maxpersons);
-            rentalInfo.appendChild(price);
             rentalInfo.appendChild(halfP);
             rentalInfo.appendChild(fullP);
-            rentalInfo.appendChild(walkinprice);
+            rentalInfo.appendChild(whalfP);
+            rentalInfo.appendChild(wfullP);
             rentalInfo.appendChild(other);
 
             document.querySelector('div.rentalInfo').appendChild(rentalInfo);

@@ -10,25 +10,25 @@
 .homePage_grid {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     margin: 10%;
 }
 
    
 #verticalimg { 
     display: block;
-    /*! position: relative; */
+    position: relative;
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin: 10px;
+    margin: auto;
 }
 
  .scoots_homeImage_vertical {
     height: auto;
     max-width: 500px;
     position: relative;
-     margin: auto; 
+    height: 653px;
 }
 
 #website_intro {
@@ -51,9 +51,11 @@
 }
 
 .weathersummary {
+    position: relative;
     grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 2;
-    width: 100%;
+    width: 90%;
 }
 
 #weather_sum {
@@ -61,6 +63,8 @@
     color: white;
     background: #112838;
     text-align: left;
+    position: relative;
+    padding: 2%;
 }
 
 /*table settings*/
@@ -99,5 +103,21 @@ thead.days_of_the_week {
 
 th, td {
     padding: 10px;
+}
+    #rental_title {
+        position: relative;
+    }
+    #rentalimgs {
+        display: flex;
+        opacity: 50%;   
+        position: relative;
+    }
+    #rentalimgs img {
+        width: 60%;
+        margin:auto;
+        
+    }
+    .googleMap {
+    width: 80%;
 }
 }

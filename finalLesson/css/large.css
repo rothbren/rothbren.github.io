@@ -31,7 +31,10 @@
     nav ul.hide {
         display: block;
     }
-    
+    .googleMap {
+    width: 400px;
+    height: 250px;
+}
     
     
 }
