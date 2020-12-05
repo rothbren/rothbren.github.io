@@ -9,6 +9,11 @@ main {
    margin: auto; 
 }
 
+a {
+    text-decoration: none;
+    color: #4DB0F7;
+}
+
 h1 {
     font-size: 30px;
     font-family: 'Anton', sans-serif;
@@ -57,10 +62,9 @@ header {
 
 /*slogan/header*/
 #slogan {
-    color: rgba(255, 255, 255, 0.7);
-    font-style: italic;
+    color: #112838;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #logo {
@@ -164,12 +168,13 @@ nav ul li.active a {
     margin: 10px;
     text-decoration: none !important;
     color: black;
+    background-color: black;
 }
 
 .rentalSum {
     margin-bottom: 10px;
-    color: white;
-    background: #3983B8;
+    color: #112838;
+    background: #4DB0F7;
     padding: 20px;
 }
 
@@ -180,7 +185,6 @@ nav ul li.active a {
 
 .weathersummary {
     margin: auto;
-    padding: 20px;
     position: relative;
     color: white;
     background: #112838;
@@ -367,7 +371,32 @@ form label.top input:required:valid {
 .googleMap {
     padding: 4px;
     margin: auto;
-    width: 50%;
-    height: auto;
+    width: 400px;
+    height: 250px;
 }
 /*************CONTACT PAGE***************************/
+.tours_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+div.gallery {
+    grid-column-start: 1;
+  grid-row-start: 1;
+  width: 180px;
+    margin: auto;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.paragraph1 {
+    grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.paragraph1 h2{
+    grid-column-start: 2;
+  grid-row-start: 1;
+}
