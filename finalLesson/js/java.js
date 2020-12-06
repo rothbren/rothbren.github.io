@@ -57,7 +57,7 @@ fetch(rentalURL)
         return response.json();
     })
     .then(function (jsonObject){
-        console.log(jsonObject); 
+        //console.log(jsonObject); 
         
         const rental = jsonObject["rentals"];
         

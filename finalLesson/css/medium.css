@@ -10,17 +10,16 @@
 .homePage_grid {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin: 10%;
 }
 
-   
 #verticalimg { 
     display: block;
     position: relative;
     grid-row-start: 1;
+    grid-row-end: 3;
     grid-column-start: 1;
-    grid-column-end: 2;
     margin: auto;
 }
 
@@ -28,7 +27,7 @@
     height: auto;
     max-width: 500px;
     position: relative;
-    height: 653px;
+    height: auto;
 }
 
 #website_intro {
@@ -37,25 +36,26 @@
     color: white;
     background: #112838;
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 1;
 }
 
 .rentalSum {
     margin: auto;
-    position: relative;
     color: white;
     background: #3983B8;
-    padding-left: 20px;
+    position: relative;
     grid-column-start: 2;
-    grid-row-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    width: 100%;
 }
 
 .weathersummary {
     position: relative;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    width: 90%;
+    grid-row-start: 3;
+    width: 100%;
 }
 
 #weather_sum {
@@ -63,16 +63,15 @@
     color: white;
     background: #112838;
     text-align: left;
-    position: relative;
     padding: 2%;
-}
+ }
 
 /*table settings*/
 .three_day_forcast {
    width: 100%;
     margin: 0px;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 3;
     position: relative;
 }
