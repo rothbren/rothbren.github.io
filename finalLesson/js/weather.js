@@ -16,23 +16,26 @@ fetch(weatherURL)
         document.getElementById('dayofweek').textContent = jsObject.daily.temp;
 
         document.getElementById('closebtn').textContent = jsObject.alerts;
-        // const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        // const forecast = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
+       
+       
+        const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const forecast = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
+            console.log(forecast);
+        for (let day = 0; day < forecast.length; day++) {
+            
+            document.getElementById('dayofweek').innerHTML = jsObject.daily.temp.day;
 
-        // for (let day = 0; day < forecast.length; day++) {
-        //     document.getElementById('dayofweek').innerHTML = jsObject.daily.temp.day;
-
-        //     const d = new Date(forecast[day].dt_txt);
-        //     document.getElementById(`dayofweek${day+1}`).textContent = weekdays[d.getDay()];
-        //     document.getElementById(`forecast${day+1}`).textContent = forecast[day].main.temp;
-        //     //console.log(forecast);
-        //     const imagesrc = 'https://openweathermap.org/img/wn/' + forecast[day].weather[0].icon + '@2x.png';
-        //     const desc = forecast[day].weather[0].description;
-        //     document.getElementById(`dayofweek${day+1}`).textContent = weekdays[d.getDay()];
-        //     document.getElementById(`forecast${day+1}`).textContent = Math.round(forecast[day].main.temp);
-        //     document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
-        //     document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
-        // }
+            const d = new Date(forecast[day].dt_txt);
+            document.getElementById(`dayofweek${day+1}`).textContent = weekdays[d.getDay()];
+            document.getElementById(`forecast${day+1}`).textContent = forecast[day].main.temp;
+            //console.log(forecast);
+            const imagesrc = 'https://openweathermap.org/img/wn/' + forecast[day].weather[0].icon + '@2x.png';
+            const desc = forecast[day].weather[0].description;
+            document.getElementById(`dayofweek${day+1}`).textContent = weekdays[d.getDay()];
+            document.getElementById(`forecast${day+1}`).textContent = Math.round(forecast[day].main.temp);
+            document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
+            document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
+        }
     
     });
 
