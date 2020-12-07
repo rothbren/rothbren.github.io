@@ -120,4 +120,15 @@ th, td {
     .googleMap {
     width: 80%;
 }
+    
+.rental_imgs {
+    display: block;
+      display: flex;
+    margin: auto;
+    padding-top: 20px;
+}
+    
+    .rental_imgs img {
+        width: 200px;
+    }
 }

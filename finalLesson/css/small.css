@@ -286,9 +286,22 @@ footer {
 }
 /*********************FOOTER**********************/
 
+/************RENTAL***************/
+.rentalInfo{
+    max-width: 760px;
+    padding: 20px;
+    outline: 10px solid black;
+    margin: auto;
+}
+
+.rental_imgs {
+    display: none;
+}
+/************RENTAL***************/
+
 /******************Reservations PAGE*******************/
 #rentalInfo {
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 form fieldset {
@@ -367,7 +380,7 @@ form label.top input:required:valid {
     padding: 20px;
     text-align: center;
 }
-/******************STORM CENTER PAGE*******************/
+/*************************************/
 
 /*************CONTACT PAGE***************************/
 #contactUs {

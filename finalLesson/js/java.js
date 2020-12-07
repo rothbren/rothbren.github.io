@@ -78,7 +78,7 @@ fetch(rentalURL)
             fullP.textContent = "Full Day Price: "+ rental[i].reservationprice.fullP;
             whalfP.textContent = "Price without Reservation- Half Day: "+ rental[i].walkinprice.whalfP;
             wfullP.textContent = "Price without Reservation- Full Day: "+ rental[i].walkinprice.wfullP;
-            other.textContent = rental[i].other;
+            other.textContent = "Other Information: " + rental[i].other;
 
             rentalInfo.appendChild(name);
             rentalInfo.appendChild(maxpersons);
