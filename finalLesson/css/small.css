@@ -358,7 +358,7 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
-#comments_box {
+.comments_box {
     margin: 10px;
 }
 
@@ -381,6 +381,7 @@ form label.top input:required:valid {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
+    border: none;
 }
 
 .googleMap {
