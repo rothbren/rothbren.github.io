@@ -49,6 +49,8 @@ h5 {
 
 /********************BODY*************************/
 
+
+
 /*********************HEADER***********************/
 header {
     background-color: #4DB0F7;
@@ -80,7 +82,22 @@ header {
 
 /*end slogan/header*/
 /*********************HEADER***********************/
+.alertbox {
+    padding: 40px;
+    background-color: #f44336;
+    color: white;
+}
 
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
 /**********************NAV***********************/
 .clearfix:after {

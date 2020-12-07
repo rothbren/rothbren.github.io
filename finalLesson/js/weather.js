@@ -15,7 +15,7 @@ fetch(weatherURL)
 
         document.getElementById('dayofweek').textContent = jsObject.daily.temp;
 
-        document.getElementById('alerts').textContent = jsObject.alerts;
+        document.getElementById('closebtn').textContent = jsObject.alerts;
         // const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         // const forecast = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
 
@@ -36,4 +36,5 @@ fetch(weatherURL)
     
     });
 
+ 
 
