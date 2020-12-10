@@ -14,11 +14,16 @@
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Zilla+Slab:wght@500&display=swap');
+    </style>
 </head>
 
 <body>
-    <div class="alertbox">
+    <div id="alertbox" class="alertbox">
         Warning:
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
     </div>
@@ -45,13 +50,12 @@
     </nav>
 
     <main>
-        <img class="home_banner" src="images/home_banner.jpg" alt="banner">
-
+        
         <div class="homePage_grid">
             <div id="verticalimg"><img class="scoots_homeImage_vertical" src="images/scooter1080.jpg"
                     alt="image promoting scoots"></div>
             <div id="website_intro">
-                <h2>Welcome</h2>
+                <h3>Welcome</h3>
                 <p class="paragraph">Are you looking to explore the beautiful lands of Cozumel?
                     Or looking to try something new? If you said yes to both those
                     questions, we have the perfect thing for you! Welcome to Scoots,
@@ -60,8 +64,10 @@
                     your convience. It doesn't matter if you are a party of 20 or a party of
                     one, come join us and let's go on an adventure.
                 </p>
+                <div class="rentalButton">
+                    <a href="reservation.html">Plan My Adventure</a>
+                </div>
 
-                <button class="rentalButton" href="reservation.html">Plan My Adventure</button>
             </div>
 
             <div class="rentalSum">
@@ -71,48 +77,54 @@
                     and rental options. From Honda Moter Scooters to
                     ATV Side-by-Sides, we will find the perfect scooter
                     for you. Be sure to check out our rentals
-                    page before booking a reservation.
+                    page before booking a reservation.a
                 </p>
-                <button class="rentalButton" href="rental.html">Rental</button>
+                <div class="rentalButton">
+                    <a href="rental.html">Rental</a>
+                </div>
+
             </div>
 
             <div class="weathersummary">
                 <div id="weather_sum">
-                    <h2>Weather:</h2>
+                    <h3>Weather:</h3>
 
                     <p>Temperature: <span id="current-temp"></span>&deg;F</p>
-                    <p>Feels Like: <span id="currently"></span></p>
                     <p>Description: <span id="description"></span></p>
                     <p>Humidity: <span id="humidity"></span>%</p>
                     <p>Wind Speed: <span id="wind_speed"></span>mph</p>
                 </div>
             </div>
-            <div class="three_day_forcast">
-                <h3>3 Day Forcast</h3>
-                <table class="weather_table">
-                    <thead class="days_of_the_week">
-                        <tr>
-                            <th><span id="dayofweek1"></span></th>
-                            <th><span id="dayofweek2"></span></th>
-                            <th><span id="dayofweek3"></span></th>
-                        </tr>
-                    </thead>
 
-                    <tr class="forcast_and_images">
-
-                        <td><span id="forecast1"></span>&#8457; <br> <img id="icon1"
-                                src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
-                                alt="unknown" /></td>
-                        <td><span id="forecast2"></span>&#8457; <br> <img id="icon2"
-                                src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
-                                alt="unknown"></td>
-                        <td><span id="forecast3"></span>&#8457; <br> <img id="icon3"
-                                src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
-                                alt="unknown"></td>
-                    </tr>
-                </table>
-            </div>
         </div>
+        <div class="three_day_forcast">
+            <h3>3 Day Forcast</h3>
+
+            <table class="weather_table">
+                <thead class="days_of_the_week">
+                    <tr>
+                        <th><span id="dayofweek0"></span></th>
+                        <th><span id="dayofweek1"></span></th>
+                        <th><span id="dayofweek2"></span></th>
+                    </tr>
+                </thead>
+
+                <tr class="forcast_and_images">
+
+                    <td><span id="forecast0"></span>&#8457; <img id="icon0"
+                            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                            alt="unknown" /></td>
+                    <td><span id="forecast1"></span>&#8457; <img id="icon1"
+                            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                            alt="unknown"></td>
+                    <td><span id="forecast2"></span>&#8457; <img id="icon2"
+                            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                            alt="unknown"></td>
+                </tr>
+            </table>
+        </div>   
+        
+        <img class="home_banner" src="images/home_banner.jpg" alt="banner">
 
         <div class="contact_info">
             <h3>Contact Us:</h3>
@@ -137,6 +149,7 @@
                 </a>
             </div>
         </div>
+     
     </main>
 
     <footer>
@@ -148,10 +161,8 @@
 
 </body>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Zilla+Slab:wght@500&display=swap');
-</style>
-<script src="js/java.js"></script>
+<!-- <script src="js/java.js"></script> -->
 <script src="js/weather.js"></script>
+<script src="js/menu.js"></script>
 
 </html>

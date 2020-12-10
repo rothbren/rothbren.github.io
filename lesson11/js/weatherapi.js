@@ -41,7 +41,7 @@ fetch(apiURL)
         const forecast = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
 
         for (let day = 0; day < forecast.length; day++) {
-            const d = new Date(forecast[day].dt_txt);
+            const d = new Date(forecast[day].dt);
             document.getElementById(`dayofweek${day+1}`).textContent = weekdays[d.getDay()];
             document.getElementById(`forecast${day+1}`).textContent = forecast[day].main.temp;
             //console.log(forecast);

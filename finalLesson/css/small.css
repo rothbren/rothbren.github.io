@@ -1,11 +1,16 @@
 /********************BODY*************************/
+
+
 body {
     font-size: 16px;
     font-family: "Zilla Slab", serif;
+    background-color: #112838;
 }
 
 main {
    margin: auto; 
+    padding: 5%;
+   background-color:  white;
 }
 
 a {
@@ -159,65 +164,54 @@ nav ul li.active a {
 
 /************************MAIN*******************/
 
-.home_banner {
-    width: 100%;
+ .home_banner { 
+     width: 100%;
 }
 
 #verticalimg {
     display: none;
 }
-.scoots_homeImage_vertical{
-    width: 100%;
-}
 
 #website_intro {
-    width: 100%;
-    margin: auto;
-    color: white;
-    background: #112838;
-    padding-top: 20px;
-     padding-bottom: 20px;
+    color: #112838;
+    background: #4DB0F7;
+    padding: 20px; 
 }
 
 .rentalButton {
-    padding: 5px;
-    margin: 10px;
+    margin: 50px 50px 50px 0px;
+}
+
+.rentalButton a {
+    padding: 20px;
+    margin: auto;
     text-decoration: none !important;
-    color: white;
-    background-color: gray;
+    color: #112838;
+    background-color: white;
 }
 
 .rentalSum {
-    margin-bottom: 10px;
     color: #112838;
     background: #4DB0F7;
+    padding: 20px; 
 }
 
-.paragraph {
+.paragraph { 
     margin: 10px;
     width: 80%;
 }
 
-.weathersummary {
-    margin: auto;
-    position: relative;
-    color: white;
-    background: #112838;
-}
-
 #weather_sum {
     font-family: "Zilla Slab", serif;
-    color: white;
-    background: #112838;
-    text-align: left;
-    position: relative;
-    padding: 2%;
+    color: #112838;
+    background: #4DB0F7;
+    padding: 20px; 
 }
 
 /*table settings*/
 .three_day_forcast {
-    width: 90%;
-    margin: 10px;
+    width: 100%;
+    padding: 10px;
 }
 
 .weather_table {
@@ -233,7 +227,7 @@ nav ul li.active a {
 }
 
 .forcast_and_images img {
-    width:50%;    
+    width: 60px;    
 }
 
 thead.days_of_the_week {
@@ -241,11 +235,10 @@ thead.days_of_the_week {
     color: white;  
     font-family: "zilla slab", serif; 
     text-align: center;
-    padding: 10px;
 }
 
 th, td {
-    padding: 10px;
+    padding: 20px;
 }
 /*end table settings*/
 
@@ -287,7 +280,7 @@ footer {
 /*********************FOOTER**********************/
 
 /************RENTAL***************/
-.rentalInfo{
+.rental_div{
     max-width: 760px;
     padding: 20px;
     outline: 10px solid black;
@@ -381,6 +374,8 @@ form label.top input:required:valid {
     text-align: center;
 }
 /*************************************/
+
+
 
 /*************CONTACT PAGE***************************/
 #contactUs {

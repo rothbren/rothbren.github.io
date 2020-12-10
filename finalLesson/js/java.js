@@ -1,38 +1,3 @@
-function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("hide");
-//console.log(toggleMenu());
-}
-
-const daynames = [
-    'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
-];
-
-const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-]
-
-
-const d = new Date();
-const dayName = daynames[d.getDay()];
-const monthName = months[d.getMonth()];
-const year = d.getFullYear();
-
-const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
-
-document.getElementById('currentdate').textContent = fulldate;
-
-/***********FORM************/
 
 var params = new URLSearchParams(location.search);
 var data = '<br/><strong>Your Reservation: </strong><br/>';
@@ -59,11 +24,11 @@ fetch(rentalURL)
     .then(function (jsonObject){
         //console.log(jsonObject); 
         
-        const rental = jsonObject["rentals"];
+        const r = jsonObject["rentals"];
         
 
-        for(let i = 0; i<rental.length; i++){
-            let rentalInfo = document.createElement('info_blocks')
+        for(let i = 0; i <r.length; i++){
+            let rental_div = document.createElement('div');
             let name = document.createElement('h3');
             let maxpersons= document.createElement('p');
             let halfP= document.createElement('p');
@@ -72,23 +37,23 @@ fetch(rentalURL)
             let wfullP= document.createElement('p');
             let other= document.createElement('p');
 
-            name.textContent = rental[i].name;
-            maxpersons.textContent = "Max Number of People: " + rental[i].maxPersons;
-            halfP.textContent = "Half Day Price: "+ rental[i].reservationprice.halfP;
-            fullP.textContent = "Full Day Price: "+ rental[i].reservationprice.fullP;
-            whalfP.textContent = "Price without Reservation- Half Day: "+ rental[i].walkinprice.whalfP;
-            wfullP.textContent = "Price without Reservation- Full Day: "+ rental[i].walkinprice.wfullP;
-            other.textContent = "Other Information: " + rental[i].other;
+            name.textContent = r[i].name;
+            maxpersons.textContent = "Max Number of People: " + r[i].maxPersons;
+            halfP.textContent = "Half Day Price: "+ r[i].reservationprice.halfP;
+            fullP.textContent = "Full Day Price: "+ r[i].reservationprice.fullP;
+            whalfP.textContent = "Price without Reservation- Half Day: "+ r[i].walkinprice.whalfP;
+            wfullP.textContent = "Price without Reservation- Full Day: "+ r[i].walkinprice.wfullP;
+            other.textContent = "Other Information: " + r[i].other;
 
-            rentalInfo.appendChild(name);
-            rentalInfo.appendChild(maxpersons);
-            rentalInfo.appendChild(halfP);
-            rentalInfo.appendChild(fullP);
-            rentalInfo.appendChild(whalfP);
-            rentalInfo.appendChild(wfullP);
-            rentalInfo.appendChild(other);
+            rental_div.appendChild(name);
+            rental_div.appendChild(maxpersons);
+            rental_div.appendChild(halfP);
+            rental_div.appendChild(fullP);
+            rental_div.appendChild(whalfP);
+            rental_div.appendChild(wfullP);
+            rental_div.appendChild(other);
 
-            document.querySelector('div.rentalInfo').appendChild(rentalInfo);
+            document.querySelector('div.rental_div').appendChild(rental_div);
 
         }
     })

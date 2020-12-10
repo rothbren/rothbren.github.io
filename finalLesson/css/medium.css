@@ -9,101 +9,44 @@
     /************************MAIN*******************/
 .homePage_grid {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 10%;
     grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 #verticalimg { 
     display: block;
-    position: relative;
     grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    margin: auto;
+    grid-row-end: 4;
 }
 
  .scoots_homeImage_vertical {
-    height: auto;
-    max-width: 500px;
-    position: relative;
-    height: auto;
+    margin: auto;
 }
 
 #website_intro {
-    margin: auto;
-    position: relative;
-    color: white;
-    background: #112838;
-    grid-column-start: 2;
-    grid-row-start: 1;
+     grid-row-start: 1;
+    grid-row-end: 2;
+     grid-column-start: 2
 }
 
 .rentalSum {
-    margin: auto;
-    color: white;
-    background: #3983B8;
-    position: relative;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    width: 100%;
+     grid-row-start: 2;
+    grid-row-end: 3;
+     grid-column-start: 2
 }
 
 .weathersummary {
-    position: relative;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    width: 100%;
-}
+     color: black;
+    }
 
 #weather_sum {
-    font-family: "Zilla Slab", serif;
-    color: white;
-    background: #112838;
-    text-align: left;
-    padding: 2%;
+   grid-row-start: 3;
+    grid-row-end: 4;
+     grid-column-start: 2; 
+    
  }
 
-/*table settings*/
-.three_day_forcast {
-   width: 100%;
-    margin: 0px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    position: relative;
-}
-
-.weather_table {
-    margin: auto;
-    width: 100%;
-}
-
-.forcast_and_images {
-    background-color: #4DB0F7;
-    color: #112838;  
-    text-align: center;
-    font-family: Courier New, Courier, monospace;
-}
-
-.forcast_and_images img {
-    width:50%;    
-}
-
-thead.days_of_the_week {
-    background-color: #112838;
-    color: white;  
-    font-family: Courier New, Courier, monospace;
-    text-align: center;
-    padding: 10px;
-}
-
-th, td {
-    padding: 10px;
-}
     #rental_title {
         position: relative;
     }
