@@ -50,6 +50,7 @@
     #rental_title {
         position: relative;
     }
+    
     #rentalimgs {
         display: flex;
         opacity: 50%;   
@@ -64,6 +65,12 @@
     width: 80%;
 }
     
+    #rentalInfo {
+        position: relative;
+        margin: auto;
+        padding-left: 40px;
+    }
+    
 .rental_imgs {
     display: block;
       display: flex;
@@ -74,4 +81,34 @@
     .rental_imgs img {
         width: 200px;
     }
+    
+ /***************************/   
+    .tours_grid {
+    display: grid;
+    grid-template-columns: 180px auto;
+        margin: auto;
+    }
+div.gallery {
+    grid-column-start: 1;
+  grid-row-start: 1;
+  max-width: 180px;
+}
+
+div.gallery img {
+    display: block;
+  width: 100%;
+  height: auto;
+}
+
+.paragraph1 {
+    grid-column-start: 2;
+  grid-row-start: 1;
+    margin: auto;
+    max-width: 80%;
+}
+
+.paragraph1 h2{
+    grid-column-start: 2;
+  grid-row-start: 1;
+}
 }

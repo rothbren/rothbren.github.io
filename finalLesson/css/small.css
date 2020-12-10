@@ -29,9 +29,8 @@ h2 {
     color: #3983B8;
     font-family: 'Anton', sans-serif;
     font-size: 30px;
-    font-kerning: 2px;
-    margin: auto;
-    padding: 20px;
+    /*! font-kerning: 2px; */
+    margin: auto 40px auto;
 }
 
 h3 {
@@ -399,25 +398,21 @@ form label.top input:required:valid {
     height: 250px;
 }
 /*************CONTACT PAGE***************************/
-.tours_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 div.gallery {
-    grid-column-start: 1;
-  grid-row-start: 1;
-  width: 180px;
+  max-width: 180px;
     margin: auto;
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+ display: none;
 }
 
 .paragraph1 {
     grid-column-start: 2;
   grid-row-start: 1;
+    margin: auto;
+    max-width: 80%;
 }
 
 .paragraph1 h2{
