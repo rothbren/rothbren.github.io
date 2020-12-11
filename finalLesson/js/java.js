@@ -13,6 +13,7 @@ data = data + 'Rental Type: ' + params.get('rentalType') + '<br/>';
 data = data + 'Special Instructions: ' + params.get('comments_box') + '<br/><br/>';
 data = data + 'Drop Off Instructions: ' + params.get('comments_box') + '<br/><br/>';
 data = data + 'Additional Information and Comments: ' + params.get('comments_box') + '<br/><br/>';
+document.querySelector(".reservationInfo").innerHTML = data;
 
 /************RENTALS***********/
 const rentalURL = "https://rothbren.github.io/finalLesson/data/rental.json";
