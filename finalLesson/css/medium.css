@@ -21,7 +21,8 @@
 }
 
  .scoots_homeImage_vertical {
-    margin: auto;
+    margin: auto;     
+    width: 95%;
 }
 
 #website_intro {
