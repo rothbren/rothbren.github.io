@@ -318,7 +318,6 @@ form legend {
 form label.top, form div {
     display: block;
     padding-top: 20px;
-    color: #3983B8;
     margin-left: 50px;
     font-size: 18px;
 }
@@ -330,7 +329,7 @@ form label.top input, form label.top select{
     border: solid 1px #999;
     border-radius: 4px;
     padding: .755rem;
-    color: #3983B8;
+    color:  #112838;
     width: 100%;
     max-width: 20rem;
     background-color: rgba(0, 0, 0, 0.1);
