@@ -289,6 +289,10 @@ footer {
 .rental_imgs {
     display: none;
 }
+
+#rental_title {
+    margin: 40px;
+}
 /************RENTAL***************/
 
 /******************Reservations PAGE*******************/
