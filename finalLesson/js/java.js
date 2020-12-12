@@ -1,20 +1,3 @@
-
-var params = new URLSearchParams(location.search);
-var data = '<br/><strong>Your Reservation: </strong><br/>';
-data = data + 'Your Name: ' + params.get('fname') + '<br/>';
-data = data + 'Email: ' + params.get('email') + '<br/>';
-data = data + 'Phone: ' + params.get('phone') + '<br/>';
-data = data + 'Zipcode: ' + params.get('zipcode') + '<br/>';
-data = data + 'Home State: ' + params.get('cname') + '<br/>';
-data = data + 'Cruise Line: ' + params.get('cruise') + '<br/>';
-data = data + 'Date of Adventure: ' + params.get('date') + '<br/>';
-data = data + 'Number in Party: ' + params.get('number') + '<br/>';
-data = data + 'Rental Type: ' + params.get('rentalType') + '<br/>';
-data = data + 'Special Instructions: ' + params.get('comments_box') + '<br/><br/>';
-data = data + 'Drop Off Instructions: ' + params.get('comments_box') + '<br/><br/>';
-data = data + 'Additional Information and Comments: ' + params.get('comments_box') + '<br/><br/>';
-document.querySelector(".reservationInfo").innerHTML = data;
-
 /************RENTALS***********/
 const rentalURL = "https://rothbren.github.io/finalLesson/data/rental.json";
 
@@ -58,3 +41,20 @@ fetch(rentalURL)
 
         }
     })
+
+var params = new URLSearchParams(location.search);
+var data = '<br/><strong>Your Reservation: </strong><br/>';
+data = data + 'Your Name: ' + params.get('fname') + '<br/>';
+data = data + 'Email: ' + params.get('email') + '<br/>';
+data = data + 'Phone: ' + params.get('phone') + '<br/>';
+data = data + 'Zipcode: ' + params.get('zipcode') + '<br/>';
+data = data + 'Home State: ' + params.get('cname') + '<br/>';
+data = data + 'Cruise Line: ' + params.get('cruise') + '<br/>';
+data = data + 'Date of Adventure: ' + params.get('date') + '<br/>';
+data = data + 'Number in Party: ' + params.get('number') + '<br/>';
+data = data + 'Rental Type: ' + params.get('rentalType') + '<br/>';
+data = data + 'Special Instructions: ' + params.get('comments_box') + '<br/><br/>';
+data = data + 'Drop Off Instructions: ' + params.get('comments_box') + '<br/><br/>';
+data = data + 'Additional Information and Comments: ' + params.get('comments_box') + '<br/><br/>';
+document.querySelector(".reservationInfo").innerHTML = data;
+
